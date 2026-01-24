@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page non trouvée | Psycho Santé 74</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6b9080',
+                        'primary-dark': '#5a7a6b',
+                        'primary-light': '#a4c3b2',
+                        accent: '#cce3de',
+                        beige: '#f6fff8',
+                        'text-dark': '#333333',
+                        'text-light': '#666666'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-text-light bg-beige min-h-screen flex flex-col">
+    <!-- Header simplifié -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <a href="/index.html" class="flex items-center">
+                <img src="/assets/images/logo.svg" alt="Psycho Santé 74" class="h-12">
+            </a>
+        </div>
+    </header>
+
+    <!-- Contenu 404 -->
+    <main class="flex-grow flex items-center justify-center py-16">
+        <div class="text-center px-4">
+            <div class="mb-8">
+                <span class="text-9xl font-bold text-primary opacity-20">404</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-text-dark mb-4">Page non trouvée</h1>
+            <p class="text-lg text-text-light mb-8 max-w-md mx-auto">
+                Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+            </p>
+            <div class="space-y-4 md:space-y-0 md:space-x-4">
+                <a href="/index.html" class="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-primary-dark transition-colors font-semibold">
+                    Retour à l'accueil
+                </a>
+                <a href="/index.html#contact" class="inline-block border-2 border-primary text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-colors font-semibold">
+                    Nous contacter
+                </a>
+            </div>
+            
+            <!-- Liens utiles -->
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <p class="text-text-light mb-4">Pages populaires :</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/pages/praticiennes/sabine-accorsini.html" class="text-primary hover:underline">Sabine Accorsini</a>
+                    <a href="/pages/praticiennes/marie-koeberle.html" class="text-primary hover:underline">Marie Koeberle</a>
+                    <a href="/pages/specialites/tcc.html" class="text-primary hover:underline">TCC</a>
+                    <a href="/pages/specialites/emdr.html" class="text-primary hover:underline">EMDR</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer simplifié -->
+    <footer class="bg-text-dark text-white py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-400 text-sm">
+            <p>© 2026 Psycho Santé 74. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

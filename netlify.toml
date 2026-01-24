@@ -1,0 +1,108 @@
+# Netlify Configuration for Psycho Santé 74
+# https://www.psycho-sante74.com
+
+[build]
+  publish = "."
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML pages - shorter cache
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# Redirects (also defined in _redirects file)
+[[redirects]]
+  from = "/sabine-accorsini/"
+  to = "/pages/praticiennes/sabine-accorsini.html"
+  status = 301
+
+[[redirects]]
+  from = "/marie-koeberle/"
+  to = "/pages/praticiennes/marie-koeberle.html"
+  status = 301
+
+[[redirects]]
+  from = "/sophie-durand/"
+  to = "/pages/praticiennes/sophie-durand.html"
+  status = 301
+
+[[redirects]]
+  from = "/anne-berthion/"
+  to = "/pages/praticiennes/anne-berthion.html"
+  status = 301
+
+[[redirects]]
+  from = "/tcc/"
+  to = "/pages/specialites/tcc.html"
+  status = 301
+
+[[redirects]]
+  from = "/emdr/"
+  to = "/pages/specialites/emdr.html"
+  status = 301
+
+[[redirects]]
+  from = "/dietetique/"
+  to = "/pages/specialites/dietetique.html"
+  status = 301
+
+[[redirects]]
+  from = "/sexologie/"
+  to = "/pages/specialites/sexologie.html"
+  status = 301
+
+[[redirects]]
+  from = "/pnl/"
+  to = "/pages/specialites/pnl.html"
+  status = 301
+
+[[redirects]]
+  from = "/kinesiologie/"
+  to = "/pages/specialites/kinesiologie.html"
+  status = 301
+
+[[redirects]]
+  from = "/mentions-legales/"
+  to = "/pages/mentions-legales.html"
+  status = 301

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales | Psycho Santé 74 - Cabinet de Psychologues à Annecy</title>
+    <meta name="description" content="Mentions légales du site Psycho Santé 74. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation du site.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.psycho-sante74.com/mentions-legales/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6b9080',
+                        'primary-dark': '#5a7a6b',
+                        'primary-light': '#a4c3b2',
+                        accent: '#cce3de',
+                        beige: '#f6fff8',
+                        'text-dark': '#333333',
+                        'text-light': '#666666'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .menu-dropdown { display: none; }
+        .menu-item:hover .menu-dropdown { display: block; }
+        .fade-in { animation: fadeIn 0.6s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-sans text-text-light bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center">
+                    <img src="../assets/images/logo.svg" alt="Psycho Santé 74" class="h-12 md:h-14">
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="../index.html" class="text-text-dark hover:text-primary transition-colors font-semibold">Accueil</a>
+                    
+                    <!-- Menu Praticiennes -->
+                    <div class="menu-item relative">
+                        <button class="text-text-dark hover:text-primary transition-colors font-semibold flex items-center">
+                            Praticiennes
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="menu-dropdown absolute left-0 top-full bg-white shadow-lg rounded-lg py-2 min-w-48 border-t-2 border-primary">
+                            <a href="praticiennes/sabine-accorsini.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">Sabine Accorsini</a>
+                            <a href="praticiennes/marie-koeberle.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">Marie Koeberle</a>
+                            <a href="praticiennes/sophie-durand.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">Sophie Durand</a>
+                            <a href="praticiennes/anne-berthion.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">Anne Berthion</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Menu Approches -->
+                    <div class="menu-item relative">
+                        <button class="text-text-dark hover:text-primary transition-colors font-semibold flex items-center">
+                            Nos Approches
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="menu-dropdown absolute left-0 top-full bg-white shadow-lg rounded-lg py-2 min-w-48 border-t-2 border-primary">
+                            <a href="specialites/tcc.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">TCC</a>
+                            <a href="specialites/emdr.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">EMDR</a>
+                            <a href="specialites/dietetique.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">Diététique</a>
+                            <a href="specialites/sexologie.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">Sexologie</a>
+                            <a href="specialites/pnl.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">PNL</a>
+                            <a href="specialites/kinesiologie.html" class="block px-4 py-2 text-text-light hover:bg-accent hover:text-primary transition-colors">Kinésiologie</a>
+                        </div>
+                    </div>
+                    
+                    <a href="../index.html#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-dark transition-colors font-semibold">Contact</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-text-dark p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="lg:hidden hidden pb-4">
+                <a href="../index.html" class="block py-2 text-text-dark hover:text-primary transition-colors">Accueil</a>
+                <div class="py-2">
+                    <span class="font-semibold text-text-dark">Praticiennes</span>
+                    <div class="pl-4 mt-1 space-y-1">
+                        <a href="praticiennes/sabine-accorsini.html" class="block py-1 text-text-light hover:text-primary">Sabine Accorsini</a>
+                        <a href="praticiennes/marie-koeberle.html" class="block py-1 text-text-light hover:text-primary">Marie Koeberle</a>
+                        <a href="praticiennes/sophie-durand.html" class="block py-1 text-text-light hover:text-primary">Sophie Durand</a>
+                        <a href="praticiennes/anne-berthion.html" class="block py-1 text-text-light hover:text-primary">Anne Berthion</a>
+                    </div>
+                </div>
+                <div class="py-2">
+                    <span class="font-semibold text-text-dark">Nos Approches</span>
+                    <div class="pl-4 mt-1 space-y-1">
+                        <a href="specialites/tcc.html" class="block py-1 text-text-light hover:text-primary">TCC</a>
+                        <a href="specialites/emdr.html" class="block py-1 text-text-light hover:text-primary">EMDR</a>
+                        <a href="specialites/dietetique.html" class="block py-1 text-text-light hover:text-primary">Diététique</a>
+                        <a href="specialites/sexologie.html" class="block py-1 text-text-light hover:text-primary">Sexologie</a>
+                        <a href="specialites/pnl.html" class="block py-1 text-text-light hover:text-primary">PNL</a>
+                        <a href="specialites/kinesiologie.html" class="block py-1 text-text-light hover:text-primary">Kinésiologie</a>
+                    </div>
+                </div>
+                <a href="../index.html#contact" class="block py-2 text-primary font-semibold">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="bg-beige py-3">
+        <div class="max-w-6xl mx-auto px-4">
+            <ol class="flex items-center space-x-2 text-sm">
+                <li><a href="../index.html" class="text-primary hover:underline">Accueil</a></li>
+                <li><span class="text-text-light">/</span></li>
+                <li><span class="text-text-light">Mentions légales</span></li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-primary-dark text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 fade-in">Mentions Légales</h1>
+            <p class="text-lg text-primary-light max-w-2xl mx-auto fade-in">
+                Informations légales concernant le site Psycho Santé 74
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            
+            <!-- Éditeur du site -->
+            <section class="mb-12 fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">1. Éditeur du site</h2>
+                <div class="bg-beige rounded-lg p-6">
+                    <p class="mb-4"><strong class="text-text-dark">Nom du site :</strong> Psycho Santé 74</p>
+                    <p class="mb-4"><strong class="text-text-dark">Adresse :</strong><br>
+                        Cabinet Psycho Santé 74<br>
+                        89 Avenue de Genève<br>
+                        Montée N° 4, 1er étage<br>
+                        74000 Annecy, France
+                    </p>
+                    <p class="mb-4"><strong class="text-text-dark">Responsables de la publication :</strong></p>
+                    <ul class="space-y-3 ml-4">
+                        <li>
+                            <strong>Sabine Accorsini</strong> - Psychologue clinicienne<br>
+                            <span class="text-text-light">Spécialiste TCC et EMDR</span>
+                        </li>
+                        <li>
+                            <strong>Marie Koeberle</strong> - Diététicienne nutritionniste<br>
+                            <span class="text-text-light">Spécialiste alimentation et santé</span>
+                        </li>
+                        <li>
+                            <strong>Sophie Durand</strong> - Sexologue clinicienne<br>
+                            <span class="text-text-light">Accompagnement vie intime</span>
+                        </li>
+                        <li>
+                            <strong>Anne Berthion</strong> - Kinésiologue<br>
+                            <span class="text-text-light">Approche psychocorporelle</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Hébergement -->
+            <section class="mb-12 fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">2. Hébergement</h2>
+                <div class="bg-beige rounded-lg p-6">
+                    <p class="mb-2"><strong class="text-text-dark">Hébergeur :</strong> Netlify</p>
+                    <p class="mb-2"><strong class="text-text-dark">Adresse :</strong> 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA</p>
+                    <p><strong class="text-text-dark">Site web :</strong> <a href="https://www.netlify.com" target="_blank" rel="noopener" class="text-primary hover:underline">www.netlify.com</a></p>
+                </div>
+            </section>
+
+            <!-- Propriété intellectuelle -->
+            <section class="mb-12 fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">3. Propriété intellectuelle</h2>
+                <div class="prose prose-lg text-text-light">
+                    <p class="mb-4">
+                        L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes, sons, logiciels, etc.) est la propriété exclusive de Psycho Santé 74 ou de ses partenaires, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.
+                    </p>
+                    <p class="mb-4">
+                        Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord exprès par écrit de Psycho Santé 74.
+                    </p>
+                    <p>
+                        Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Protection des données -->
+            <section class="mb-12 fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">4. Protection des données personnelles</h2>
+                <div class="prose prose-lg text-text-light">
+                    <p class="mb-4">
+                        Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.
+                    </p>
+                    <p class="mb-4">
+                        Les informations recueillies via les formulaires de contact sont destinées uniquement à permettre aux praticiennes de répondre à vos demandes. Ces données ne sont ni vendues, ni cédées à des tiers.
+                    </p>
+                    <p class="mb-4">
+                        <strong class="text-text-dark">Données collectées :</strong>
+                    </p>
+                    <ul class="list-disc pl-6 mb-4 space-y-2">
+                        <li>Nom et prénom</li>
+                        <li>Adresse email</li>
+                        <li>Numéro de téléphone (optionnel)</li>
+                        <li>Contenu de votre message</li>
+                    </ul>
+                    <p class="mb-4">
+                        <strong class="text-text-dark">Durée de conservation :</strong> Les données sont conservées pendant une durée maximale de 3 ans à compter du dernier contact.
+                    </p>
+                    <p>
+                        Pour exercer vos droits ou pour toute question sur le traitement de vos données, vous pouvez nous contacter à l'adresse du cabinet.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Cookies -->
+            <section class="mb-12 fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">5. Cookies</h2>
+                <div class="prose prose-lg text-text-light">
+                    <p class="mb-4">
+                        Ce site n'utilise pas de cookies de traçage publicitaire. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés.
+                    </p>
+                    <p>
+                        Vous pouvez configurer votre navigateur pour refuser les cookies. Cependant, cela pourrait affecter le bon fonctionnement de certaines parties du site.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Limitation de responsabilité -->
+            <section class="mb-12 fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">6. Limitation de responsabilité</h2>
+                <div class="prose prose-lg text-text-light">
+                    <p class="mb-4">
+                        Les informations contenues sur ce site sont aussi précises que possible et le site est périodiquement mis à jour. Toutefois, des erreurs, omissions ou inexactitudes peuvent survenir.
+                    </p>
+                    <p class="mb-4">
+                        Les informations présentes sur le site sont fournies à titre indicatif et ne sauraient remplacer une consultation avec un professionnel de santé. Psycho Santé 74 ne pourra être tenu responsable de l'interprétation faite des informations contenues sur ce site.
+                    </p>
+                    <p>
+                        Psycho Santé 74 n'est pas responsable des liens hypertextes pointant vers d'autres sites internet et ne saurait être tenu responsable du contenu et de l'utilisation qui en est faite.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Droit applicable -->
+            <section class="mb-12 fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">7. Droit applicable</h2>
+                <div class="prose prose-lg text-text-light">
+                    <p class="mb-4">
+                        Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.
+                    </p>
+                    <p>
+                        Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à l'adresse indiquée ci-dessus.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Crédits -->
+            <section class="fade-in">
+                <h2 class="text-2xl font-bold text-text-dark mb-6 pb-2 border-b-2 border-primary">8. Crédits</h2>
+                <div class="bg-beige rounded-lg p-6">
+                    <p class="mb-4"><strong class="text-text-dark">Conception et développement :</strong><br>
+                        Site web développé avec HTML5, CSS (Tailwind) et JavaScript
+                    </p>
+                    <p class="mb-4"><strong class="text-text-dark">Photographies :</strong><br>
+                        Photos du cabinet et portraits fournis par les praticiennes
+                    </p>
+                    <p><strong class="text-text-dark">Dernière mise à jour :</strong> Janvier 2026</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Logo et description -->
+                <div>
+                    <img src="../assets/images/logo.svg" alt="Psycho Santé 74" class="h-12 mb-4 brightness-0 invert">
+                    <p class="text-gray-400 text-sm">
+                        Cabinet pluridisciplinaire dédié à votre bien-être mental et physique à Annecy.
+                    </p>
+                </div>
+                
+                <!-- Liens rapides -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Nos Approches</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="specialites/tcc.html" class="hover:text-primary transition-colors">TCC</a></li>
+                        <li><a href="specialites/emdr.html" class="hover:text-primary transition-colors">EMDR</a></li>
+                        <li><a href="specialites/dietetique.html" class="hover:text-primary transition-colors">Diététique</a></li>
+                        <li><a href="specialites/sexologie.html" class="hover:text-primary transition-colors">Sexologie</a></li>
+                        <li><a href="specialites/pnl.html" class="hover:text-primary transition-colors">PNL</a></li>
+                        <li><a href="specialites/kinesiologie.html" class="hover:text-primary transition-colors">Kinésiologie</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <address class="text-gray-400 not-italic text-sm space-y-2">
+                        <p>89 Avenue de Genève</p>
+                        <p>74000 Annecy</p>
+                        <p class="mt-4">
+                            <a href="../index.html#contact" class="text-primary hover:underline">Prendre rendez-vous →</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2026 Psycho Santé 74. Tous droits réservés. | <a href="mentions-legales.html" class="hover:text-primary">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Fade in animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

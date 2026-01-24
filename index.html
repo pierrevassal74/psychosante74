@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabinet Psycho Santé 74 à Annecy : 4 professionnelles de santé (psychologue, diététicienne, conseillère conjugale, médiatrice familiale). Consultations personnalisées en Haute-Savoie.">
+    <meta name="keywords" content="psychologue Annecy, psychothérapeute Haute-Savoie, diététicienne 74, conseillère conjugale Annecy, médiation familiale, TCC, EMDR, santé mentale Annecy">
+    <meta name="author" content="Cabinet Psycho Santé 74">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.psycho-sante74.com/">
+    <meta property="og:title" content="Cabinet Psycho Santé 74 - Psychologues et Professionnelles de Santé à Annecy">
+    <meta property="og:description" content="4 professionnelles de santé à votre écoute à Annecy : psychologue, diététicienne, conseillère conjugale, médiatrice familiale.">
+    <meta property="og:image" content="https://www.psycho-sante74.com/assets/images/logo.svg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cabinet Psycho Santé 74 - Annecy">
+    <meta name="twitter:description" content="4 professionnels de santé à votre écoute à Annecy">
+    
+    <title>Cabinet Psycho Santé 74 | Psychologues et Professionnels de Santé à Annecy</title>
+    
+    <link rel="canonical" href="https://www.psycho-sante74.com/">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6b9080',
+                        'primary-dark': '#557264',
+                        'primary-light': '#a4c3b2',
+                        accent: '#cce3de',
+                        beige: '#f6fff8',
+                        'dark-blue': '#335978'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .fade-in { animation: fadeIn 0.8s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hover-zoom { transition: transform 0.3s ease; }
+        .hover-zoom:hover { transform: scale(1.05); }
+        .slider { scroll-snap-type: x mandatory; }
+        .slider > * { scroll-snap-align: center; }
+    </style>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Cabinet Psycho Santé 74",
+        "description": "Cabinet de professionnelles de santé mentale et bien-être à Annecy",
+        "url": "https://www.psycho-sante74.com",
+        "telephone": "+33788598889",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "89 Avenue de Genève, Montée N°4 - 1er étage",
+            "addressLocality": "Annecy",
+            "postalCode": "74000",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.9174675",
+            "longitude": "6.12354490000007"
+        },
+        "medicalSpecialty": ["Psychology", "Nutrition", "FamilyTherapy", "Mediation"],
+        "openingHours": "Mo-Fr 09:00-19:00"
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-beige">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <a href="/" class="flex items-center">
+                    <img src="assets/images/logo.svg" alt="Psycho Santé 74" class="h-12 md:h-14">
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#accueil" class="text-gray-700 hover:text-primary transition">Accueil</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center">
+                            L'équipe
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="pages/praticiennes/sabine-accorsini.html" class="block px-4 py-3 hover:bg-accent text-sm">Sabine Accorsini - Psychologue</a>
+                            <a href="pages/praticiennes/marie-koeberle.html" class="block px-4 py-3 hover:bg-accent text-sm">Marie Koeberle - Diététicienne</a>
+                            <a href="pages/praticiennes/sophie-durand.html" class="block px-4 py-3 hover:bg-accent text-sm">Sophie Durand - Conseillère Familiale</a>
+                            <a href="pages/praticiennes/anne-berthion.html" class="block px-4 py-3 hover:bg-accent text-sm">Anne Berthion - Médiatrice</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center">
+                            Spécialités
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <a href="pages/specialites/tcc.html" class="block px-4 py-3 hover:bg-accent text-sm">TCC</a>
+                            <a href="pages/specialites/emdr.html" class="block px-4 py-3 hover:bg-accent text-sm">EMDR</a>
+                            <a href="pages/specialites/dietetique.html" class="block px-4 py-3 hover:bg-accent text-sm">Diététique</a>
+                            <a href="pages/specialites/sexologie.html" class="block px-4 py-3 hover:bg-accent text-sm">Sexologie</a>
+                            <a href="pages/specialites/pnl.html" class="block px-4 py-3 hover:bg-accent text-sm">PNL</a>
+                            <a href="pages/specialites/kinesiologie.html" class="block px-4 py-3 hover:bg-accent text-sm">Kinésiologie</a>
+                        </div>
+                    </div>
+                    <a href="#pourquoi" class="text-gray-700 hover:text-primary transition">Pourquoi consulter</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#accueil" class="block px-4 py-3 hover:bg-accent">Accueil</a>
+            <div class="px-4 py-2 text-sm font-semibold text-gray-500">L'équipe</div>
+            <a href="pages/praticiennes/sabine-accorsini.html" class="block px-6 py-2 hover:bg-accent text-sm">Sabine Accorsini</a>
+            <a href="pages/praticiennes/marie-koeberle.html" class="block px-6 py-2 hover:bg-accent text-sm">Marie Koeberle</a>
+            <a href="pages/praticiennes/sophie-durand.html" class="block px-6 py-2 hover:bg-accent text-sm">Sophie Durand</a>
+            <a href="pages/praticiennes/anne-berthion.html" class="block px-6 py-2 hover:bg-accent text-sm">Anne Berthion</a>
+            <div class="px-4 py-2 text-sm font-semibold text-gray-500">Spécialités</div>
+            <a href="pages/specialites/tcc.html" class="block px-6 py-2 hover:bg-accent text-sm">TCC</a>
+            <a href="pages/specialites/emdr.html" class="block px-6 py-2 hover:bg-accent text-sm">EMDR</a>
+            <a href="pages/specialites/dietetique.html" class="block px-6 py-2 hover:bg-accent text-sm">Diététique</a>
+            <a href="#pourquoi" class="block px-4 py-3 hover:bg-accent">Pourquoi consulter</a>
+            <a href="#contact" class="block px-4 py-3 hover:bg-accent">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="relative bg-dark-blue min-h-screen flex items-center pt-16">
+        <div class="absolute inset-0 bg-gradient-to-br from-dark-blue to-primary opacity-90"></div>
+        <div class="relative max-w-7xl mx-auto px-4 py-20 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 fade-in">
+                CABINET PSYCHO SANTÉ 74
+            </h1>
+            <p class="text-xl md:text-2xl text-accent mb-12 fade-in">
+                4 PROFESSIONNELLES DE SANTÉ À VOTRE ÉCOUTE
+            </p>
+            
+            <!-- Team Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <!-- Sabine -->
+                <a href="pages/praticiennes/sabine-accorsini.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/sabine.jpg" alt="Sabine Accorsini - Psychologue Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg text-gray-800">SABINE ACCORSINI</h2>
+                        <p class="text-primary font-semibold text-sm mt-1">Psychologue Clinicienne et Psychanalyste</p>
+                        <p class="text-gray-600 text-sm mt-2">Diplômée de l'université Paris X-Nanterre</p>
+                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
+                    </div>
+                </a>
+                
+                <!-- Marie -->
+                <a href="pages/praticiennes/marie-koeberle.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/marie-320-240.jpg" alt="Marie Koeberle - Diététicienne Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg text-gray-800">MARIE KOEBERLE</h2>
+                        <p class="text-primary font-semibold text-sm mt-1">Diététicienne</p>
+                        <p class="text-gray-600 text-sm mt-2">Spécialisée dans l'alimentation du sportif d'endurance</p>
+                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
+                    </div>
+                </a>
+                
+                <!-- Sophie -->
+                <a href="pages/praticiennes/sophie-durand.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/sophie-320-240.jpg" alt="Sophie Durand - Conseillère Conjugale Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg text-gray-800">SOPHIE DURAND</h2>
+                        <p class="text-primary font-semibold text-sm mt-1">Conseillère Conjugale et Familiale</p>
+                        <p class="text-gray-600 text-sm mt-2">Accompagnement individuel, couple et famille</p>
+                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
+                    </div>
+                </a>
+                
+                <!-- Anne -->
+                <a href="pages/praticiennes/anne-berthion.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/anne-320-240.jpg" alt="Anne Berthion - Médiatrice Familiale Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-bold text-lg text-gray-800">ANNE BERTHION</h2>
+                        <p class="text-primary font-semibold text-sm mt-1">Médiatrice Familiale</p>
+                        <p class="text-gray-600 text-sm mt-2">Diplôme d'État - Membre APMF</p>
+                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi consulter -->
+    <section id="pourquoi" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue text-center mb-10">POURQUOI CONSULTER ?</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                <p>Les motifs de consultations peuvent être divers et chaque personne a des besoins qui lui sont propres et légitimes dans sa démarche à venir consulter.</p>
+                
+                <p>Quel que soit notre âge, il peut tout à chacun nous arriver d'être confrontés à des peurs, du stress, de l'anxiété ou de la tristesse que nous n'arrivons pas à surmonter seul.</p>
+                
+                <p><strong class="text-primary">Il n'y a pas de bonnes ou de mauvaises raisons pour venir consulter</strong>, il y a seulement un désir d'aller mieux face à un mal être pouvant provenir d'événements difficiles de vie (séparation, deuil, conflits, décisions…) ou de troubles psychologiques dont les impacts se répercutent sur le quotidien (trouble obsessionnel compulsif, phobies, dépression, burn out, agoraphobie, traumatisme…).</p>
+                
+                <p>Venir consulter un psychologue ne signifie pas que l'on ne dispose pas des ressources internes pour aller mieux ou que l'on est « faible ». Au contraire, cette démarche souvent difficile nécessite d'aller puiser dans ses ressources et fait appel à une certaine force afin de faire face aux difficultés rencontrées en venant solliciter un professionnel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Cabinet -->
+    <section id="cabinet" class="py-20 bg-accent">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue text-center mb-10">NOTRE CABINET DE CONSULTATIONS</h2>
+            
+            <!-- Image Slider -->
+            <div class="relative overflow-hidden rounded-xl shadow-xl">
+                <div id="slider" class="slider flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
+                    <img src="assets/images/images-cabinet-6.jpg" alt="Cabinet Psycho Santé 74 - Salle d'attente" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
+                    <img src="assets/images/images-cabinet-2.jpg" alt="Cabinet Psycho Santé 74 - Bureau" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
+                    <img src="assets/images/images-cabinet-1.jpg" alt="Cabinet Psycho Santé 74 - Espace consultation" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
+                    <img src="assets/images/images-cabinet-3.jpg" alt="Cabinet Psycho Santé 74 - Accueil" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
+                    <img src="assets/images/images-cabinet-4.jpg" alt="Cabinet Psycho Santé 74 - Décoration" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
+                    <img src="assets/images/images-cabinet-5.jpg" alt="Cabinet Psycho Santé 74 - Ambiance" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
+                </div>
+                <!-- Slider Controls -->
+                <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg" aria-label="Image précédente">
+                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg" aria-label="Image suivante">
+                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-dark-blue text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">NOUS TROUVER À ANNECY</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Contact Info -->
+                <div>
+                    <div class="bg-white/10 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-bold mb-4 text-accent">CABINET PSYCHO SANTÉ 74</h3>
+                        <p class="text-lg">89 Avenue de Genève<br>Montée N° 4 – 1er étage<br>74000 Annecy</p>
+                    </div>
+                    
+                    <!-- Contacts accordion -->
+                    <div class="space-y-3">
+                        <details class="bg-white/10 rounded-lg p-4 group" open>
+                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                                Sabine Accorsini
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </summary>
+                            <div class="mt-3 text-accent">
+                                <p>Tél. : <a href="tel:+33788598889" class="hover:underline">07 88 59 88 89</a></p>
+                                <p>E-mail : <a href="mailto:sabine.accorsini.psy@gmail.com" class="hover:underline">sabine.accorsini.psy@gmail.com</a></p>
+                            </div>
+                        </details>
+                        
+                        <details class="bg-white/10 rounded-lg p-4 group">
+                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                                Marie Koeberle
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </summary>
+                            <div class="mt-3 text-accent">
+                                <p>Tél. : <a href="tel:+33766662054" class="hover:underline">07 66 66 20 54</a></p>
+                                <p>E-mail : <a href="mailto:contact@mariediet.com" class="hover:underline">contact@mariediet.com</a></p>
+                                <p>Site web : <a href="https://www.mariediet.com" target="_blank" rel="noopener" class="hover:underline">www.mariediet.com</a></p>
+                            </div>
+                        </details>
+                        
+                        <details class="bg-white/10 rounded-lg p-4 group">
+                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                                Sophie Durand
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </summary>
+                            <div class="mt-3 text-accent">
+                                <p>Tél. : <a href="tel:+33670619603" class="hover:underline">06 70 61 96 03</a></p>
+                                <p>E-mail : <a href="mailto:sdurand.ccf@gmail.com" class="hover:underline">sdurand.ccf@gmail.com</a></p>
+                            </div>
+                        </details>
+                        
+                        <details class="bg-white/10 rounded-lg p-4 group">
+                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                                Anne Berthion
+                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </summary>
+                            <div class="mt-3 text-accent">
+                                <p>Tél. : <a href="tel:+33667893238" class="hover:underline">06 67 89 32 38</a></p>
+                                <p>E-mail : <a href="mailto:aberthion.instantmediation@gmail.com" class="hover:underline">aberthion.instantmediation@gmail.com</a></p>
+                                <p>Site web : <a href="https://mediation74.fr" target="_blank" rel="noopener" class="hover:underline">mediation74.fr</a></p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                
+                <!-- Google Maps -->
+                <div class="rounded-xl overflow-hidden shadow-lg h-96 md:h-auto">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.982!2d6.12354490000007!3d45.9174675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ff9ceda0001%3A0x5e78f8a0e4b!2s89%20Av.%20de%20Gen%C3%A8ve%2C%2074000%20Annecy!5e0!3m2!1sfr!2sfr!4v1704800000000!5m2!1sfr!2sfr"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 400px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localisation Cabinet Psycho Santé 74 à Annecy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>© Psycho Santé 74 – 2025 | <a href="pages/mentions-legales.html" class="hover:text-white transition">Mentions légales</a></p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-dark" aria-label="Retour en haut">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Slider functionality
+        const slider = document.getElementById('slider');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        let currentSlide = 0;
+        const slides = slider.children.length;
+
+        function goToSlide(index) {
+            if (index < 0) index = slides - 1;
+            if (index >= slides) index = 0;
+            currentSlide = index;
+            slider.scrollTo({ left: slider.offsetWidth * currentSlide, behavior: 'smooth' });
+        }
+
+        prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+        nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+        // Auto-advance slider
+        setInterval(() => goToSlide(currentSlide + 1), 5000);
+
+        // Back to top button
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

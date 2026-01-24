@@ -1,0 +1,11 @@
+# Robots.txt for Psycho Santé 74
+# https://www.psycho-sante74.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.psycho-sante74.com/sitemap.xml
+
+# Disallow admin and system directories (none on static site)
+# All pages are allowed for crawling

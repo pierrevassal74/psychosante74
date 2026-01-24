@@ -1,0 +1,37 @@
+# Netlify Redirects for Psycho Santé 74
+
+# Redirect www to non-www (or vice versa - choose one)
+# https://www.psycho-sante74.com/* https://psycho-sante74.com/:splat 301
+
+# Clean URLs - Remove .html extension
+/pages/praticiennes/sabine-accorsini    /pages/praticiennes/sabine-accorsini.html    200
+/pages/praticiennes/marie-koeberle      /pages/praticiennes/marie-koeberle.html      200
+/pages/praticiennes/sophie-durand       /pages/praticiennes/sophie-durand.html       200
+/pages/praticiennes/anne-berthion       /pages/praticiennes/anne-berthion.html       200
+
+/pages/specialites/tcc                  /pages/specialites/tcc.html                  200
+/pages/specialites/emdr                 /pages/specialites/emdr.html                 200
+/pages/specialites/dietetique           /pages/specialites/dietetique.html           200
+/pages/specialites/sexologie            /pages/specialites/sexologie.html            200
+/pages/specialites/pnl                  /pages/specialites/pnl.html                  200
+/pages/specialites/kinesiologie         /pages/specialites/kinesiologie.html         200
+
+/pages/mentions-legales                 /pages/mentions-legales.html                 200
+
+# Old WordPress URLs redirects (from old site structure)
+/sabine-accorsini/                      /pages/praticiennes/sabine-accorsini.html    301
+/marie-koeberle/                        /pages/praticiennes/marie-koeberle.html      301
+/sophie-durand/                         /pages/praticiennes/sophie-durand.html       301
+/anne-berthion/                         /pages/praticiennes/anne-berthion.html       301
+
+/tcc/                                   /pages/specialites/tcc.html                  301
+/emdr/                                  /pages/specialites/emdr.html                 301
+/dietetique/                            /pages/specialites/dietetique.html           301
+/sexologie/                             /pages/specialites/sexologie.html            301
+/pnl/                                   /pages/specialites/pnl.html                  301
+/kinesiologie/                          /pages/specialites/kinesiologie.html         301
+
+/mentions-legales/                      /pages/mentions-legales.html                 301
+
+# 404 fallback
+/*                                      /404.html                                    404
