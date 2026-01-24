@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cabinet Psycho Santé 74 à Annecy : 4 professionnelles de santé (psychologue, diététicienne, conseillère conjugale, médiatrice familiale). Consultations personnalisées en Haute-Savoie.">
-    <meta name="keywords" content="psychologue Annecy, psychothérapeute Haute-Savoie, diététicienne 74, conseillère conjugale Annecy, médiation familiale, TCC, EMDR, santé mentale Annecy">
-    <meta name="author" content="Cabinet Psycho Santé 74">
+    <title>Cabinet Psycho Santé 74 | Psychologue, Diététicienne, Conseillère Conjugale, Médiatrice à Annecy</title>
+    <meta name="description" content="Cabinet pluridisciplinaire à Annecy : psychologue clinicienne, diététicienne, conseillère conjugale et familiale, médiatrice familiale en Haute-Savoie (74).">
+    <meta name="keywords" content="psychologue Annecy, diététicienne Annecy, conseillère conjugale Haute-Savoie, médiatrice familiale 74, thérapie couple, médiation">
+    <meta name="author" content="Psycho Santé 74">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.psycho-sante74.com/">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cabinet Psycho Santé 74 | Professionnels de Santé à Annecy">
+    <meta property="og:description" content="4 professionnelles de santé à votre écoute à Annecy. Psychologie, diététique, conseil conjugal, médiation familiale.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.psycho-sante74.com/">
-    <meta property="og:title" content="Cabinet Psycho Santé 74 - Psychologues et Professionnelles de Santé à Annecy">
-    <meta property="og:description" content="4 professionnelles de santé à votre écoute à Annecy : psychologue, diététicienne, conseillère conjugale, médiatrice familiale.">
-    <meta property="og:image" content="https://www.psycho-sante74.com/assets/images/logo.svg">
+    <meta property="og:image" content="https://www.psycho-sante74.com/assets/images/hero-cabinet.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Psycho Santé 74">
+    <meta property="og:updated_time" content="2026-01-24T12:00:00+01:00">
     
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cabinet Psycho Santé 74 - Annecy">
-    <meta name="twitter:description" content="4 professionnels de santé à votre écoute à Annecy">
+    <meta name="twitter:title" content="Cabinet Psycho Santé 74 | Annecy">
+    <meta name="twitter:description" content="4 professionnelles de santé à votre écoute à Annecy.">
     
-    <title>Cabinet Psycho Santé 74 | Psychologues et Professionnels de Santé à Annecy</title>
-    
-    <link rel="canonical" href="https://www.psycho-sante74.com/">
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    
+    <!-- Preconnect pour performances -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,403 +41,1176 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#6b9080',
-                        'primary-dark': '#557264',
-                        'primary-light': '#a4c3b2',
-                        accent: '#cce3de',
-                        beige: '#f6fff8',
-                        'dark-blue': '#335978'
+                        // Nouvelle palette basée sur image_1.png
+                        sage: {
+                            50: '#f4f7f4',
+                            100: '#e8efe8',
+                            200: '#d1dfd1',
+                            300: '#A3B9A0',
+                            400: '#8aa887',
+                            500: '#6b9068',
+                            600: '#5a7a58',
+                            700: '#4a6448'
+                        },
+                        terracotta: {
+                            50: '#fdf6f4',
+                            100: '#fbe9e4',
+                            200: '#f5d4cc',
+                            300: '#D99F8C',
+                            400: '#c98a75',
+                            500: '#b5725d',
+                            600: '#9a5d4a'
+                        },
+                        sky: {
+                            light: '#9FC3D4',
+                            medium: '#9FC0E1',
+                            dark: '#7BA5C0'
+                        },
+                        cream: {
+                            50: '#FDFCF9',
+                            100: '#F5F0E1',
+                            200: '#EDE6D3',
+                            300: '#E5DCC5'
+                        },
+                        text: {
+                            dark: '#2D3A3A',
+                            medium: '#4A5858',
+                            light: '#6B7B7B'
+                        }
                     },
                     fontFamily: {
-                        sans: ['Open Sans', 'sans-serif'],
+                        'display': ['Cormorant Garamond', 'serif'],
+                        'sans': ['Nunito', 'sans-serif']
                     }
                 }
             }
         }
     </script>
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        html { scroll-behavior: smooth; }
-        .fade-in { animation: fadeIn 0.8s ease-in-out; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .hover-zoom { transition: transform 0.3s ease; }
-        .hover-zoom:hover { transform: scale(1.05); }
-        .slider { scroll-snap-type: x mandatory; }
-        .slider > * { scroll-snap-align: center; }
-    </style>
-    
-    <!-- Schema.org structured data -->
+    <!-- Schema.org Données structurées LocalBusiness -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "name": "Cabinet Psycho Santé 74",
-        "description": "Cabinet de professionnelles de santé mentale et bien-être à Annecy",
+        "description": "Cabinet pluridisciplinaire regroupant psychologue clinicienne, diététicienne, conseillère conjugale et médiatrice familiale à Annecy",
         "url": "https://www.psycho-sante74.com",
-        "telephone": "+33788598889",
+        "logo": "https://www.psycho-sante74.com/assets/images/logo.svg",
+        "image": "https://www.psycho-sante74.com/assets/images/hero-cabinet.png",
+        "telephone": "+33-6-XX-XX-XX-XX",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "89 Avenue de Genève, Montée N°4 - 1er étage",
+            "streetAddress": "89 Avenue de Genève, Montée N°4, 1er étage",
             "addressLocality": "Annecy",
             "postalCode": "74000",
+            "addressRegion": "Haute-Savoie",
             "addressCountry": "FR"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "45.9174675",
-            "longitude": "6.12354490000007"
+            "latitude": "45.9163",
+            "longitude": "6.1286"
         },
-        "medicalSpecialty": ["Psychology", "Nutrition", "FamilyTherapy", "Mediation"],
-        "openingHours": "Mo-Fr 09:00-19:00"
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "19:00"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services de santé",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Psychologie clinique et psychanalyse"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diététique et nutrition sportive"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Conseil conjugal et familial"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Médiation familiale"}}
+            ]
+        },
+        "employee": [
+            {
+                "@type": "Person",
+                "name": "Sabine Accorsini",
+                "jobTitle": "Psychologue Clinicienne et Psychanalyste",
+                "description": "Diplômée de l'université Paris X-Nanterre"
+            },
+            {
+                "@type": "Person",
+                "name": "Marie Koeberle",
+                "jobTitle": "Diététicienne",
+                "description": "Spécialisée dans l'alimentation du sportif d'endurance"
+            },
+            {
+                "@type": "Person",
+                "name": "Sophie Durand",
+                "jobTitle": "Conseillère Conjugale et Familiale",
+                "description": "Accompagnement individuel, couple et famille"
+            },
+            {
+                "@type": "Person",
+                "name": "Anne Berthion",
+                "jobTitle": "Médiatrice Familiale",
+                "description": "Diplômée d'État - Membre APMF"
+            }
+        ],
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "45.9163",
+                "longitude": "6.1286"
+            },
+            "geoRadius": "30000"
+        },
+        "priceRange": "€€"
     }
     </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        
+        /* Menu dropdown */
+        .menu-dropdown { 
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .menu-item:hover .menu-dropdown { 
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        /* Textures pour cartes praticiennes (basées sur image_2.png) */
+        .card-texture-sage {
+            background: linear-gradient(135deg, rgba(163, 185, 160, 0.15) 0%, rgba(245, 240, 225, 0.4) 50%, rgba(163, 185, 160, 0.1) 100%);
+            background-size: 200% 200%;
+        }
+        .card-texture-terracotta {
+            background: linear-gradient(135deg, rgba(217, 159, 140, 0.15) 0%, rgba(245, 240, 225, 0.4) 50%, rgba(217, 159, 140, 0.1) 100%);
+            background-size: 200% 200%;
+        }
+        .card-texture-sky {
+            background: linear-gradient(135deg, rgba(159, 195, 212, 0.2) 0%, rgba(245, 240, 225, 0.4) 50%, rgba(159, 192, 225, 0.15) 100%);
+            background-size: 200% 200%;
+        }
+        .card-texture-cream {
+            background: linear-gradient(135deg, rgba(245, 240, 225, 0.6) 0%, rgba(237, 230, 211, 0.4) 50%, rgba(229, 220, 197, 0.3) 100%);
+            background-size: 200% 200%;
+        }
+        
+        /* Hero overlay */
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(163, 185, 160, 0.88) 0%, rgba(90, 122, 88, 0.92) 100%);
+        }
+        
+        /* Bouton flottant mobile */
+        .floating-cta {
+            box-shadow: 0 4px 20px rgba(217, 159, 140, 0.5);
+        }
+        
+        /* Galerie slider */
+        .gallery-container {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        .gallery-container::-webkit-scrollbar {
+            display: none;
+        }
+        .gallery-item {
+            scroll-snap-align: center;
+        }
+        
+        /* Media Queries explicites pour SEO */
+        @media screen and (max-width: 768px) {
+            .hero-title { font-size: 2rem !important; line-height: 1.2 !important; }
+            .hero-subtitle { font-size: 1rem !important; }
+            .mobile-hidden { display: none !important; }
+            .mobile-visible { display: block !important; }
+        }
+        @media screen and (max-width: 640px) {
+            .hero-title { font-size: 1.75rem !important; }
+            .card-grid { grid-template-columns: 1fr !important; }
+        }
+        @media screen and (min-width: 769px) {
+            .desktop-hidden { display: none !important; }
+            .desktop-visible { display: flex !important; }
+        }
+        @media screen and (min-width: 1024px) {
+            .hero-title { font-size: 3.5rem !important; }
+        }
+        
+        /* Effet hover cartes */
+        .practitioner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(45, 58, 58, 0.15);
+        }
+        
+        /* Style liens téléphone cliquables */
+        a[href^="tel:"] {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body class="font-sans text-gray-800 bg-beige">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center py-3">
+<body class="font-sans text-text-medium bg-cream-50">
+    <!-- Header Sticky -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-3 lg:py-4">
                 <!-- Logo -->
-                <a href="/" class="flex items-center">
-                    <img src="assets/images/logo.svg" alt="Psycho Santé 74" class="h-12 md:h-14">
+                <a href="/" class="flex items-center group" aria-label="Accueil Psycho Santé 74">
+                    <img src="assets/images/logo.svg" alt="Logo Psycho Santé 74 - Cabinet de psychologues Annecy" width="180" height="48" class="h-10 md:h-12 w-auto transition-transform group-hover:scale-105">
                 </a>
                 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="#accueil" class="text-gray-700 hover:text-primary transition">Accueil</a>
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-primary transition flex items-center">
-                            L'équipe
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8" aria-label="Navigation principale">
+                    <a href="#accueil" class="text-text-dark hover:text-sage-500 transition-colors font-medium">Accueil</a>
+                    
+                    <!-- Menu Équipe -->
+                    <div class="menu-item relative">
+                        <button class="text-text-dark hover:text-sage-500 transition-colors font-medium flex items-center gap-1" aria-haspopup="true" aria-expanded="false">
+                            Notre Équipe
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
-                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                            <a href="pages/praticiennes/sabine-accorsini.html" class="block px-4 py-3 hover:bg-accent text-sm">Sabine Accorsini - Psychologue</a>
-                            <a href="pages/praticiennes/marie-koeberle.html" class="block px-4 py-3 hover:bg-accent text-sm">Marie Koeberle - Diététicienne</a>
-                            <a href="pages/praticiennes/sophie-durand.html" class="block px-4 py-3 hover:bg-accent text-sm">Sophie Durand - Conseillère Familiale</a>
-                            <a href="pages/praticiennes/anne-berthion.html" class="block px-4 py-3 hover:bg-accent text-sm">Anne Berthion - Médiatrice</a>
+                        <div class="menu-dropdown absolute left-0 top-full pt-2">
+                            <div class="bg-white shadow-xl rounded-2xl py-3 min-w-60 border-t-4 border-sage-300">
+                                <a href="pages/praticiennes/sabine-accorsini.html" class="block px-5 py-3 hover:bg-sage-50 transition-all">
+                                    <span class="font-semibold text-text-dark">Sabine Accorsini</span>
+                                    <span class="block text-sm text-sage-500">Psychologue Clinicienne</span>
+                                </a>
+                                <a href="pages/praticiennes/marie-koeberle.html" class="block px-5 py-3 hover:bg-sage-50 transition-all">
+                                    <span class="font-semibold text-text-dark">Marie Koeberle</span>
+                                    <span class="block text-sm text-terracotta-400">Diététicienne</span>
+                                </a>
+                                <a href="pages/praticiennes/sophie-durand.html" class="block px-5 py-3 hover:bg-sage-50 transition-all">
+                                    <span class="font-semibold text-text-dark">Sophie Durand</span>
+                                    <span class="block text-sm text-sky-dark">Conseillère Conjugale</span>
+                                </a>
+                                <a href="pages/praticiennes/anne-berthion.html" class="block px-5 py-3 hover:bg-sage-50 transition-all">
+                                    <span class="font-semibold text-text-dark">Anne Berthion</span>
+                                    <span class="block text-sm text-text-light">Médiatrice Familiale</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-primary transition flex items-center">
-                            Spécialités
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    
+                    <!-- Menu Approches -->
+                    <div class="menu-item relative">
+                        <button class="text-text-dark hover:text-sage-500 transition-colors font-medium flex items-center gap-1" aria-haspopup="true" aria-expanded="false">
+                            Nos Approches
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                            <a href="pages/specialites/tcc.html" class="block px-4 py-3 hover:bg-accent text-sm">TCC</a>
-                            <a href="pages/specialites/emdr.html" class="block px-4 py-3 hover:bg-accent text-sm">EMDR</a>
-                            <a href="pages/specialites/dietetique.html" class="block px-4 py-3 hover:bg-accent text-sm">Diététique</a>
-                            <a href="pages/specialites/sexologie.html" class="block px-4 py-3 hover:bg-accent text-sm">Sexologie</a>
-                            <a href="pages/specialites/pnl.html" class="block px-4 py-3 hover:bg-accent text-sm">PNL</a>
-                            <a href="pages/specialites/kinesiologie.html" class="block px-4 py-3 hover:bg-accent text-sm">Kinésiologie</a>
+                        <div class="menu-dropdown absolute left-0 top-full pt-2">
+                            <div class="bg-white shadow-xl rounded-2xl py-3 min-w-48 border-t-4 border-terracotta-300">
+                                <a href="pages/specialites/tcc.html" class="block px-5 py-2.5 text-text-medium hover:bg-terracotta-50 hover:text-terracotta-600 transition-all">TCC</a>
+                                <a href="pages/specialites/emdr.html" class="block px-5 py-2.5 text-text-medium hover:bg-terracotta-50 hover:text-terracotta-600 transition-all">EMDR</a>
+                                <a href="pages/specialites/dietetique.html" class="block px-5 py-2.5 text-text-medium hover:bg-terracotta-50 hover:text-terracotta-600 transition-all">Diététique</a>
+                                <a href="pages/praticiennes/sophie-durand.html" class="block px-5 py-2.5 text-text-medium hover:bg-terracotta-50 hover:text-terracotta-600 transition-all">Conseil Conjugal</a>
+                                <a href="pages/specialites/pnl.html" class="block px-5 py-2.5 text-text-medium hover:bg-terracotta-50 hover:text-terracotta-600 transition-all">PNL</a>
+                                <a href="pages/praticiennes/anne-berthion.html" class="block px-5 py-2.5 text-text-medium hover:bg-terracotta-50 hover:text-terracotta-600 transition-all">Médiation Familiale</a>
+                            </div>
                         </div>
                     </div>
-                    <a href="#pourquoi" class="text-gray-700 hover:text-primary transition">Pourquoi consulter</a>
-                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
-                </div>
+                    
+                    <a href="#cabinet" class="text-text-dark hover:text-sage-500 transition-colors font-medium">Le Cabinet</a>
+                    
+                    <!-- CTA Principal -->
+                    <a href="#contact" class="bg-terracotta-300 text-white px-6 py-2.5 rounded-full hover:bg-terracotta-400 transition-all font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Prendre RDV
+                    </a>
+                </nav>
                 
-                <!-- Mobile menu button -->
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700" aria-label="Menu">
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-text-dark p-2 rounded-lg hover:bg-sage-50 transition-colors" aria-label="Menu" aria-expanded="false">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
             </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <a href="#accueil" class="block px-4 py-3 hover:bg-accent">Accueil</a>
-            <div class="px-4 py-2 text-sm font-semibold text-gray-500">L'équipe</div>
-            <a href="pages/praticiennes/sabine-accorsini.html" class="block px-6 py-2 hover:bg-accent text-sm">Sabine Accorsini</a>
-            <a href="pages/praticiennes/marie-koeberle.html" class="block px-6 py-2 hover:bg-accent text-sm">Marie Koeberle</a>
-            <a href="pages/praticiennes/sophie-durand.html" class="block px-6 py-2 hover:bg-accent text-sm">Sophie Durand</a>
-            <a href="pages/praticiennes/anne-berthion.html" class="block px-6 py-2 hover:bg-accent text-sm">Anne Berthion</a>
-            <div class="px-4 py-2 text-sm font-semibold text-gray-500">Spécialités</div>
-            <a href="pages/specialites/tcc.html" class="block px-6 py-2 hover:bg-accent text-sm">TCC</a>
-            <a href="pages/specialites/emdr.html" class="block px-6 py-2 hover:bg-accent text-sm">EMDR</a>
-            <a href="pages/specialites/dietetique.html" class="block px-6 py-2 hover:bg-accent text-sm">Diététique</a>
-            <a href="#pourquoi" class="block px-4 py-3 hover:bg-accent">Pourquoi consulter</a>
-            <a href="#contact" class="block px-4 py-3 hover:bg-accent">Contact</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="accueil" class="relative bg-dark-blue min-h-screen flex items-center pt-16">
-        <div class="absolute inset-0 bg-gradient-to-br from-dark-blue to-primary opacity-90"></div>
-        <div class="relative max-w-7xl mx-auto px-4 py-20 text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 fade-in">
-                CABINET PSYCHO SANTÉ 74
-            </h1>
-            <p class="text-xl md:text-2xl text-accent mb-12 fade-in">
-                4 PROFESSIONNELLES DE SANTÉ À VOTRE ÉCOUTE
-            </p>
             
-            <!-- Team Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-                <!-- Sabine -->
-                <a href="pages/praticiennes/sabine-accorsini.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/sabine.jpg" alt="Sabine Accorsini - Psychologue Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                    </div>
-                    <div class="p-4">
-                        <h2 class="font-bold text-lg text-gray-800">SABINE ACCORSINI</h2>
-                        <p class="text-primary font-semibold text-sm mt-1">Psychologue Clinicienne et Psychanalyste</p>
-                        <p class="text-gray-600 text-sm mt-2">Diplômée de l'université Paris X-Nanterre</p>
-                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
-                    </div>
-                </a>
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="lg:hidden hidden pb-6 border-t border-sage-100 pt-4" aria-label="Navigation mobile">
+                <a href="#accueil" class="block py-3 text-text-dark hover:text-sage-500 font-medium">Accueil</a>
                 
-                <!-- Marie -->
-                <a href="pages/praticiennes/marie-koeberle.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/marie-320-240.jpg" alt="Marie Koeberle - Diététicienne Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+                <div class="py-3 border-t border-sage-50">
+                    <span class="font-semibold text-sage-500 text-sm uppercase tracking-wide">Notre Équipe</span>
+                    <div class="mt-2 ml-4 space-y-2">
+                        <a href="pages/praticiennes/sabine-accorsini.html" class="block py-2 text-text-medium hover:text-sage-500">Sabine Accorsini - Psychologue</a>
+                        <a href="pages/praticiennes/marie-koeberle.html" class="block py-2 text-text-medium hover:text-terracotta-400">Marie Koeberle - Diététicienne</a>
+                        <a href="pages/praticiennes/sophie-durand.html" class="block py-2 text-text-medium hover:text-sky-dark">Sophie Durand - Conseillère Conjugale</a>
+                        <a href="pages/praticiennes/anne-berthion.html" class="block py-2 text-text-medium hover:text-sage-500">Anne Berthion - Médiatrice Familiale</a>
                     </div>
-                    <div class="p-4">
-                        <h2 class="font-bold text-lg text-gray-800">MARIE KOEBERLE</h2>
-                        <p class="text-primary font-semibold text-sm mt-1">Diététicienne</p>
-                        <p class="text-gray-600 text-sm mt-2">Spécialisée dans l'alimentation du sportif d'endurance</p>
-                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
-                    </div>
-                </a>
-                
-                <!-- Sophie -->
-                <a href="pages/praticiennes/sophie-durand.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/sophie-320-240.jpg" alt="Sophie Durand - Conseillère Conjugale Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                    </div>
-                    <div class="p-4">
-                        <h2 class="font-bold text-lg text-gray-800">SOPHIE DURAND</h2>
-                        <p class="text-primary font-semibold text-sm mt-1">Conseillère Conjugale et Familiale</p>
-                        <p class="text-gray-600 text-sm mt-2">Accompagnement individuel, couple et famille</p>
-                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
-                    </div>
-                </a>
-                
-                <!-- Anne -->
-                <a href="pages/praticiennes/anne-berthion.html" class="bg-white rounded-xl overflow-hidden shadow-lg hover-zoom group">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/anne-320-240.jpg" alt="Anne Berthion - Médiatrice Familiale Annecy" class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                    </div>
-                    <div class="p-4">
-                        <h2 class="font-bold text-lg text-gray-800">ANNE BERTHION</h2>
-                        <p class="text-primary font-semibold text-sm mt-1">Médiatrice Familiale</p>
-                        <p class="text-gray-600 text-sm mt-2">Diplôme d'État - Membre APMF</p>
-                        <span class="inline-block mt-3 text-primary font-semibold text-sm group-hover:translate-x-2 transition">Plus d'infos →</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pourquoi consulter -->
-    <section id="pourquoi" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue text-center mb-10">POURQUOI CONSULTER ?</h2>
-            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
-                <p>Les motifs de consultations peuvent être divers et chaque personne a des besoins qui lui sont propres et légitimes dans sa démarche à venir consulter.</p>
-                
-                <p>Quel que soit notre âge, il peut tout à chacun nous arriver d'être confrontés à des peurs, du stress, de l'anxiété ou de la tristesse que nous n'arrivons pas à surmonter seul.</p>
-                
-                <p><strong class="text-primary">Il n'y a pas de bonnes ou de mauvaises raisons pour venir consulter</strong>, il y a seulement un désir d'aller mieux face à un mal être pouvant provenir d'événements difficiles de vie (séparation, deuil, conflits, décisions…) ou de troubles psychologiques dont les impacts se répercutent sur le quotidien (trouble obsessionnel compulsif, phobies, dépression, burn out, agoraphobie, traumatisme…).</p>
-                
-                <p>Venir consulter un psychologue ne signifie pas que l'on ne dispose pas des ressources internes pour aller mieux ou que l'on est « faible ». Au contraire, cette démarche souvent difficile nécessite d'aller puiser dans ses ressources et fait appel à une certaine force afin de faire face aux difficultés rencontrées en venant solliciter un professionnel.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Notre Cabinet -->
-    <section id="cabinet" class="py-20 bg-accent">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-dark-blue text-center mb-10">NOTRE CABINET DE CONSULTATIONS</h2>
-            
-            <!-- Image Slider -->
-            <div class="relative overflow-hidden rounded-xl shadow-xl">
-                <div id="slider" class="slider flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
-                    <img src="assets/images/images-cabinet-6.jpg" alt="Cabinet Psycho Santé 74 - Salle d'attente" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
-                    <img src="assets/images/images-cabinet-2.jpg" alt="Cabinet Psycho Santé 74 - Bureau" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
-                    <img src="assets/images/images-cabinet-1.jpg" alt="Cabinet Psycho Santé 74 - Espace consultation" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
-                    <img src="assets/images/images-cabinet-3.jpg" alt="Cabinet Psycho Santé 74 - Accueil" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
-                    <img src="assets/images/images-cabinet-4.jpg" alt="Cabinet Psycho Santé 74 - Décoration" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
-                    <img src="assets/images/images-cabinet-5.jpg" alt="Cabinet Psycho Santé 74 - Ambiance" class="w-full flex-shrink-0 object-cover h-96" loading="lazy">
                 </div>
-                <!-- Slider Controls -->
-                <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg" aria-label="Image précédente">
-                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                    </svg>
-                </button>
-                <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg" aria-label="Image suivante">
-                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </button>
-            </div>
+                
+                <div class="py-3 border-t border-sage-50">
+                    <span class="font-semibold text-terracotta-400 text-sm uppercase tracking-wide">Nos Approches</span>
+                    <div class="mt-2 ml-4 grid grid-cols-2 gap-2">
+                        <a href="pages/specialites/tcc.html" class="py-2 text-text-medium hover:text-sage-500">TCC</a>
+                        <a href="pages/specialites/emdr.html" class="py-2 text-text-medium hover:text-sage-500">EMDR</a>
+                        <a href="pages/specialites/dietetique.html" class="py-2 text-text-medium hover:text-sage-500">Diététique</a>
+                        <a href="pages/praticiennes/sophie-durand.html" class="py-2 text-text-medium hover:text-sage-500">Conseil Conjugal</a>
+                        <a href="pages/specialites/pnl.html" class="py-2 text-text-medium hover:text-sage-500">PNL</a>
+                        <a href="pages/praticiennes/anne-berthion.html" class="py-2 text-text-medium hover:text-sage-500">Médiation</a>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="block mt-4 text-center bg-terracotta-300 text-white px-6 py-3 rounded-full font-semibold shadow-md">
+                    Prendre Rendez-vous
+                </a>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-dark-blue text-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">NOUS TROUVER À ANNECY</h2>
+    <main id="accueil">
+        <!-- ============================================
+             HERO SECTION - Nouvelle image hero-cabinet.png
+             ============================================ -->
+        <section class="relative min-h-[90vh] flex items-center overflow-hidden" aria-labelledby="hero-title">
+            <!-- Background Image (image_0.png) -->
+            <div class="absolute inset-0">
+                <img 
+                    src="assets/images/hero-cabinet.png" 
+                    alt="Intérieur chaleureux du cabinet Psycho Santé 74 à Annecy - salon de consultation avec vue sur les montagnes" 
+                    width="1920" 
+                    height="1080"
+                    class="w-full h-full object-cover"
+                    fetchpriority="high"
+                >
+                <div class="hero-overlay absolute inset-0"></div>
+            </div>
             
-            <div class="grid md:grid-cols-2 gap-10">
-                <!-- Contact Info -->
-                <div>
-                    <div class="bg-white/10 rounded-xl p-6 mb-6">
-                        <h3 class="text-xl font-bold mb-4 text-accent">CABINET PSYCHO SANTÉ 74</h3>
-                        <p class="text-lg">89 Avenue de Genève<br>Montée N° 4 – 1er étage<br>74000 Annecy</p>
+            <!-- Hero Content -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="max-w-3xl">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white/95 text-sm font-medium mb-6 animate-fade-in-up">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                        Cabinet pluridisciplinaire à Annecy
+                    </span>
+                    
+                    <h1 id="hero-title" class="hero-title font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up delay-100">
+                        Retrouvez l'équilibre<br>
+                        <span class="text-cream-100">et la sérénité</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-in-up delay-200 max-w-2xl">
+                        Un espace d'écoute et de soin bienveillant avec <strong class="font-semibold">4 professionnelles de santé</strong> dédiées à votre bien-être mental et physique, au cœur d'Annecy.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
+                        <a href="#contact" class="inline-flex items-center justify-center bg-terracotta-300 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-terracotta-400 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            Prendre Rendez-vous
+                        </a>
+                        <a href="#equipe" class="inline-flex items-center justify-center bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 transition-all border border-white/30">
+                            Découvrir l'équipe
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float hidden md:block">
+                <div class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
+                    <div class="w-1.5 h-3 bg-white/70 rounded-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             POURQUOI CONSULTER
+             ============================================ -->
+        <section class="py-20 bg-white" aria-labelledby="pourquoi-title">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block px-4 py-1.5 bg-sage-100 text-sage-600 rounded-full text-sm font-semibold mb-4">Accompagnement personnalisé</span>
+                    <h2 id="pourquoi-title" class="font-display text-3xl md:text-4xl font-bold text-text-dark mb-6">
+                        Pourquoi consulter ?
+                    </h2>
+                    <p class="text-lg text-text-medium leading-relaxed">
+                        Que vous traversiez une période difficile ou souhaitiez améliorer votre qualité de vie, notre équipe pluridisciplinaire vous accompagne avec bienveillance à Annecy.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Raison 1 -->
+                    <div class="group p-6 rounded-2xl bg-cream-50 hover:bg-sage-50 transition-all duration-300 border border-transparent hover:border-sage-200 hover:shadow-lg">
+                        <div class="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-sage-200 transition-colors">
+                            <svg class="w-7 h-7 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-text-dark mb-2">Anxiété & Stress</h3>
+                        <p class="text-text-light text-sm leading-relaxed">Retrouvez la sérénité et apprenez à gérer vos émotions au quotidien grâce aux TCC et à l'EMDR.</p>
                     </div>
                     
-                    <!-- Contacts accordion -->
-                    <div class="space-y-3">
-                        <details class="bg-white/10 rounded-lg p-4 group" open>
-                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
-                                Sabine Accorsini
-                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </summary>
-                            <div class="mt-3 text-accent">
-                                <p>Tél. : <a href="tel:+33788598889" class="hover:underline">07 88 59 88 89</a></p>
-                                <p>E-mail : <a href="mailto:sabine.accorsini.psy@gmail.com" class="hover:underline">sabine.accorsini.psy@gmail.com</a></p>
-                            </div>
-                        </details>
-                        
-                        <details class="bg-white/10 rounded-lg p-4 group">
-                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
-                                Marie Koeberle
-                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </summary>
-                            <div class="mt-3 text-accent">
-                                <p>Tél. : <a href="tel:+33766662054" class="hover:underline">07 66 66 20 54</a></p>
-                                <p>E-mail : <a href="mailto:contact@mariediet.com" class="hover:underline">contact@mariediet.com</a></p>
-                                <p>Site web : <a href="https://www.mariediet.com" target="_blank" rel="noopener" class="hover:underline">www.mariediet.com</a></p>
-                            </div>
-                        </details>
-                        
-                        <details class="bg-white/10 rounded-lg p-4 group">
-                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
-                                Sophie Durand
-                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </summary>
-                            <div class="mt-3 text-accent">
-                                <p>Tél. : <a href="tel:+33670619603" class="hover:underline">06 70 61 96 03</a></p>
-                                <p>E-mail : <a href="mailto:sdurand.ccf@gmail.com" class="hover:underline">sdurand.ccf@gmail.com</a></p>
-                            </div>
-                        </details>
-                        
-                        <details class="bg-white/10 rounded-lg p-4 group">
-                            <summary class="font-semibold cursor-pointer flex justify-between items-center">
-                                Anne Berthion
-                                <svg class="w-5 h-5 transform group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </summary>
-                            <div class="mt-3 text-accent">
-                                <p>Tél. : <a href="tel:+33667893238" class="hover:underline">06 67 89 32 38</a></p>
-                                <p>E-mail : <a href="mailto:aberthion.instantmediation@gmail.com" class="hover:underline">aberthion.instantmediation@gmail.com</a></p>
-                                <p>Site web : <a href="https://mediation74.fr" target="_blank" rel="noopener" class="hover:underline">mediation74.fr</a></p>
-                            </div>
-                        </details>
+                    <!-- Raison 2 -->
+                    <div class="group p-6 rounded-2xl bg-cream-50 hover:bg-terracotta-50 transition-all duration-300 border border-transparent hover:border-terracotta-200 hover:shadow-lg">
+                        <div class="w-14 h-14 bg-terracotta-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-terracotta-200 transition-colors">
+                            <svg class="w-7 h-7 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-text-dark mb-2">Troubles alimentaires</h3>
+                        <p class="text-text-light text-sm leading-relaxed">Rétablissez une relation saine avec la nourriture grâce à un accompagnement nutritionnel personnalisé.</p>
+                    </div>
+                    
+                    <!-- Raison 3 -->
+                    <div class="group p-6 rounded-2xl bg-cream-50 hover:bg-sky-light/20 transition-all duration-300 border border-transparent hover:border-sky-light hover:shadow-lg">
+                        <div class="w-14 h-14 bg-sky-light/30 rounded-xl flex items-center justify-center mb-4 group-hover:bg-sky-light/50 transition-colors">
+                            <svg class="w-7 h-7 text-sky-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-text-dark mb-2">Difficultés relationnelles</h3>
+                        <p class="text-text-light text-sm leading-relaxed">Améliorez vos relations de couple, familiales ou professionnelles avec l'aide de nos spécialistes.</p>
+                    </div>
+                    
+                    <!-- Raison 4 -->
+                    <div class="group p-6 rounded-2xl bg-cream-50 hover:bg-cream-200 transition-all duration-300 border border-transparent hover:border-cream-300 hover:shadow-lg">
+                        <div class="w-14 h-14 bg-cream-200 rounded-xl flex items-center justify-center mb-4 group-hover:bg-terracotta-100 transition-colors">
+                            <svg class="w-7 h-7 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-text-dark mb-2">Développement personnel</h3>
+                        <p class="text-text-light text-sm leading-relaxed">Révélez votre potentiel et gagnez en confiance grâce à la kinésiologie et la PNL.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             ÉQUIPE - Cartes avec textures
+             ============================================ -->
+        <section id="equipe" class="py-20 bg-cream-100" aria-labelledby="equipe-title">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block px-4 py-1.5 bg-terracotta-100 text-terracotta-600 rounded-full text-sm font-semibold mb-4">Notre équipe</span>
+                    <h2 id="equipe-title" class="font-display text-3xl md:text-4xl font-bold text-text-dark mb-6">
+                        4 professionnelles de santé à votre écoute
+                    </h2>
+                    <p class="text-lg text-text-medium leading-relaxed">
+                        Des expertes passionnées et bienveillantes, chacune dans son domaine, pour un accompagnement global et personnalisé à Annecy et en Haute-Savoie.
+                    </p>
+                </div>
                 
-                <!-- Google Maps -->
-                <div class="rounded-xl overflow-hidden shadow-lg h-96 md:h-auto">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.982!2d6.12354490000007!3d45.9174675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ff9ceda0001%3A0x5e78f8a0e4b!2s89%20Av.%20de%20Gen%C3%A8ve%2C%2074000%20Annecy!5e0!3m2!1sfr!2sfr!4v1704800000000!5m2!1sfr!2sfr"
-                        width="100%" 
-                        height="100%" 
-                        style="border:0; min-height: 400px;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Localisation Cabinet Psycho Santé 74 à Annecy">
-                    </iframe>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 card-grid">
+                    <!-- Carte Sabine - Texture sage -->
+                    <article class="practitioner-card group card-texture-sage rounded-3xl p-6 border border-sage-200 transition-all duration-500 bg-white/60 backdrop-blur-sm">
+                        <div class="relative mb-6">
+                            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-sage-200 group-hover:ring-sage-300 transition-all shadow-lg">
+                                <img 
+                                    src="assets/images/sabine.jpg" 
+                                    alt="Sabine Accorsini - Psychologue Clinicienne et Psychanalyste à Annecy" 
+                                    width="128" 
+                                    height="128"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 px-4 py-1.5 bg-sage-300 text-white text-xs font-semibold rounded-full shadow-md">
+                                Psychologue
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-display text-xl font-bold text-text-dark mb-1">
+                                <a href="pages/praticiennes/sabine-accorsini.html" class="hover:text-sage-500 transition-colors">
+                                    Sabine Accorsini
+                                </a>
+                            </h3>
+                            <p class="text-sage-500 font-semibold text-sm mb-2">Psychologue Clinicienne et Psychanalyste</p>
+                            <p class="text-text-light text-sm mb-4 leading-relaxed">Diplômée de l'université Paris X-Nanterre</p>
+                            <a href="pages/praticiennes/sabine-accorsini.html" class="inline-flex items-center justify-center w-full bg-sage-100 text-sage-600 px-4 py-2.5 rounded-full font-medium text-sm hover:bg-sage-200 transition-all group-hover:bg-sage-300 group-hover:text-white">
+                                Plus d'infos
+                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Carte Marie - Texture terracotta -->
+                    <article class="practitioner-card group card-texture-terracotta rounded-3xl p-6 border border-terracotta-200 transition-all duration-500 bg-white/60 backdrop-blur-sm">
+                        <div class="relative mb-6">
+                            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-terracotta-200 group-hover:ring-terracotta-300 transition-all shadow-lg">
+                                <img 
+                                    src="assets/images/marie-profile.jpg" 
+                                    alt="Marie Koeberle - Diététicienne spécialisée alimentation du sportif d'endurance à Annecy" 
+                                    width="128" 
+                                    height="128"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 px-4 py-1.5 bg-terracotta-300 text-white text-xs font-semibold rounded-full shadow-md">
+                                Diététicienne
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-display text-xl font-bold text-text-dark mb-1">
+                                <a href="pages/praticiennes/marie-koeberle.html" class="hover:text-terracotta-400 transition-colors">
+                                    Marie Koeberle
+                                </a>
+                            </h3>
+                            <p class="text-terracotta-400 font-semibold text-sm mb-2">Diététicienne</p>
+                            <p class="text-text-light text-sm mb-4 leading-relaxed">Spécialisée dans l'alimentation du sportif d'endurance</p>
+                            <a href="pages/praticiennes/marie-koeberle.html" class="inline-flex items-center justify-center w-full bg-terracotta-100 text-terracotta-600 px-4 py-2.5 rounded-full font-medium text-sm hover:bg-terracotta-200 transition-all group-hover:bg-terracotta-300 group-hover:text-white">
+                                Plus d'infos
+                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Carte Sophie - Texture sky -->
+                    <article class="practitioner-card group card-texture-sky rounded-3xl p-6 border border-sky-light/50 transition-all duration-500 bg-white/60 backdrop-blur-sm">
+                        <div class="relative mb-6">
+                            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-sky-light/60 group-hover:ring-sky-light transition-all shadow-lg">
+                                <img 
+                                    src="assets/images/sophie-profile.jpg" 
+                                    alt="Sophie Durand - Conseillère Conjugale et Familiale à Annecy" 
+                                    width="128" 
+                                    height="128"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 px-4 py-1.5 bg-sky-light text-white text-xs font-semibold rounded-full shadow-md whitespace-nowrap">
+                                Conseillère
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-display text-xl font-bold text-text-dark mb-1">
+                                <a href="pages/praticiennes/sophie-durand.html" class="hover:text-sky-dark transition-colors">
+                                    Sophie Durand
+                                </a>
+                            </h3>
+                            <p class="text-sky-dark font-semibold text-sm mb-2">Conseillère Conjugale et Familiale</p>
+                            <p class="text-text-light text-sm mb-4 leading-relaxed">Accompagnement individuel, couple et famille</p>
+                            <a href="pages/praticiennes/sophie-durand.html" class="inline-flex items-center justify-center w-full bg-sky-light/30 text-sky-dark px-4 py-2.5 rounded-full font-medium text-sm hover:bg-sky-light/50 transition-all group-hover:bg-sky-light group-hover:text-white">
+                                Plus d'infos
+                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Carte Anne - Texture cream -->
+                    <article class="practitioner-card group card-texture-cream rounded-3xl p-6 border border-cream-300 transition-all duration-500 bg-white/60 backdrop-blur-sm">
+                        <div class="relative mb-6">
+                            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-cream-300 group-hover:ring-sage-200 transition-all shadow-lg">
+                                <img 
+                                    src="assets/images/anne-profile.jpg" 
+                                    alt="Anne Berthion - Médiatrice Familiale diplômée d'État à Annecy" 
+                                    width="128" 
+                                    height="128"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 px-4 py-1.5 bg-text-medium text-white text-xs font-semibold rounded-full shadow-md">
+                                Médiatrice
+                            </span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-display text-xl font-bold text-text-dark mb-1">
+                                <a href="pages/praticiennes/anne-berthion.html" class="hover:text-sage-500 transition-colors">
+                                    Anne Berthion
+                                </a>
+                            </h3>
+                            <p class="text-text-medium font-semibold text-sm mb-2">Médiatrice Familiale</p>
+                            <p class="text-text-light text-sm mb-4 leading-relaxed">Diplômée d'État - Membre APMF</p>
+                            <a href="pages/praticiennes/anne-berthion.html" class="inline-flex items-center justify-center w-full bg-cream-200 text-text-medium px-4 py-2.5 rounded-full font-medium text-sm hover:bg-cream-300 transition-all group-hover:bg-sage-300 group-hover:text-white">
+                                Plus d'infos
+                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-gray-400 py-6">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>© Psycho Santé 74 – 2025 | <a href="pages/mentions-legales.html" class="hover:text-white transition">Mentions légales</a></p>
+        <!-- ============================================
+             NOS APPROCHES THÉRAPEUTIQUES
+             ============================================ -->
+        <section class="py-20 bg-white" aria-labelledby="approches-title">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block px-4 py-1.5 bg-sage-100 text-sage-600 rounded-full text-sm font-semibold mb-4">Méthodes thérapeutiques</span>
+                    <h2 id="approches-title" class="font-display text-3xl md:text-4xl font-bold text-text-dark mb-6">
+                        Des approches reconnues et efficaces
+                    </h2>
+                    <p class="text-lg text-text-medium leading-relaxed">
+                        Nous utilisons des méthodes éprouvées scientifiquement, adaptées à vos besoins spécifiques pour un accompagnement sur-mesure.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="pages/specialites/tcc.html" class="group p-6 rounded-2xl bg-gradient-to-br from-sage-50 to-sage-100 hover:from-sage-100 hover:to-sage-200 transition-all duration-300 border border-sage-100 hover:shadow-lg">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-sage-200 rounded-xl flex items-center justify-center group-hover:bg-sage-300 transition-colors">
+                                <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-text-dark group-hover:text-sage-600 transition-colors">TCC</h3>
+                        </div>
+                        <p class="text-text-medium text-sm leading-relaxed">Thérapies Cognitivo-Comportementales pour modifier les schémas de pensée négatifs et les comportements problématiques.</p>
+                    </a>
+                    
+                    <a href="pages/specialites/emdr.html" class="group p-6 rounded-2xl bg-gradient-to-br from-terracotta-50 to-terracotta-100 hover:from-terracotta-100 hover:to-terracotta-200 transition-all duration-300 border border-terracotta-100 hover:shadow-lg">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-terracotta-200 rounded-xl flex items-center justify-center group-hover:bg-terracotta-300 transition-colors">
+                                <svg class="w-6 h-6 text-terracotta-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-text-dark group-hover:text-terracotta-500 transition-colors">EMDR</h3>
+                        </div>
+                        <p class="text-text-medium text-sm leading-relaxed">Désensibilisation et retraitement par les mouvements oculaires pour traiter les traumatismes et le stress post-traumatique.</p>
+                    </a>
+                    
+                    <a href="pages/specialites/dietetique.html" class="group p-6 rounded-2xl bg-gradient-to-br from-sky-light/20 to-sky-light/40 hover:from-sky-light/30 hover:to-sky-light/50 transition-all duration-300 border border-sky-light/30 hover:shadow-lg">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-sky-light/50 rounded-xl flex items-center justify-center group-hover:bg-sky-light transition-colors">
+                                <svg class="w-6 h-6 text-sky-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-text-dark group-hover:text-sky-dark transition-colors">Diététique</h3>
+                        </div>
+                        <p class="text-text-medium text-sm leading-relaxed">Accompagnement nutritionnel personnalisé pour une alimentation équilibrée et une meilleure relation à la nourriture.</p>
+                    </a>
+                    
+                    <a href="pages/praticiennes/sophie-durand.html" class="group p-6 rounded-2xl bg-gradient-to-br from-cream-100 to-cream-200 hover:from-cream-200 hover:to-terracotta-50 transition-all duration-300 border border-cream-200 hover:shadow-lg">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-cream-300 rounded-xl flex items-center justify-center group-hover:bg-terracotta-100 transition-colors">
+                                <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-text-dark group-hover:text-terracotta-500 transition-colors">Conseil Conjugal</h3>
+                        </div>
+                        <p class="text-text-medium text-sm leading-relaxed">Accompagnement individuel, en couple ou en famille pour améliorer vos relations et traverser les difficultés.</p>
+                    </a>
+                    
+                    <a href="pages/specialites/pnl.html" class="group p-6 rounded-2xl bg-gradient-to-br from-sage-50 to-cream-100 hover:from-sage-100 hover:to-cream-200 transition-all duration-300 border border-sage-100 hover:shadow-lg">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center group-hover:bg-sage-200 transition-colors">
+                                <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-text-dark group-hover:text-sage-600 transition-colors">PNL</h3>
+                        </div>
+                        <p class="text-text-medium text-sm leading-relaxed">Programmation Neuro-Linguistique pour atteindre vos objectifs personnels et professionnels plus efficacement.</p>
+                    </a>
+                    
+                    <a href="pages/praticiennes/anne-berthion.html" class="group p-6 rounded-2xl bg-gradient-to-br from-terracotta-50 to-cream-100 hover:from-terracotta-100 hover:to-cream-200 transition-all duration-300 border border-terracotta-100 hover:shadow-lg">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-terracotta-100 rounded-xl flex items-center justify-center group-hover:bg-terracotta-200 transition-colors">
+                                <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m9 5.197v-1a6 6 0 00-3-5.197"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-display text-xl font-bold text-text-dark group-hover:text-terracotta-500 transition-colors">Médiation Familiale</h3>
+                        </div>
+                        <p class="text-text-medium text-sm leading-relaxed">Processus structuré pour faciliter la communication et résoudre les conflits familiaux dans un cadre neutre et bienveillant.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             GALERIE DU CABINET - Slider amélioré
+             ============================================ -->
+        <section id="cabinet" class="py-20 bg-cream-100" aria-labelledby="cabinet-title">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block px-4 py-1.5 bg-terracotta-100 text-terracotta-600 rounded-full text-sm font-semibold mb-4">Visite virtuelle</span>
+                    <h2 id="cabinet-title" class="font-display text-3xl md:text-4xl font-bold text-text-dark mb-6">
+                        Notre cabinet de consultations à Annecy
+                    </h2>
+                    <p class="text-lg text-text-medium leading-relaxed">
+                        Un espace chaleureux et apaisant au cœur d'Annecy, conçu pour votre bien-être et votre sérénité, avec vue sur les montagnes.
+                    </p>
+                </div>
+                
+                <!-- Galerie Slider -->
+                <div class="relative">
+                    <div class="gallery-container flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory" id="gallery">
+                        <!-- Image 1 - Salle d'attente -->
+                        <div class="gallery-item flex-shrink-0 w-80 md:w-[28rem]">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl group h-72">
+                                <img 
+                                    src="assets/images/images-cabinet-1.jpg" 
+                                    alt="Salle d'attente du cabinet Psycho Santé 74 avec chaises grises et tableaux modernes rouges" 
+                                    width="448" 
+                                    height="288"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-5">
+                                    <h4 class="text-white font-display font-semibold text-lg">Salle d'attente</h4>
+                                    <p class="text-white/80 text-sm">Espace accueillant et confortable</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 2 - Bureau consultation -->
+                        <div class="gallery-item flex-shrink-0 w-80 md:w-[28rem]">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl group h-72">
+                                <img 
+                                    src="assets/images/images-cabinet-2.jpg" 
+                                    alt="Bureau de consultation lumineux avec tableaux papillons colorés et fauteuils confortables" 
+                                    width="448" 
+                                    height="288"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-5">
+                                    <h4 class="text-white font-display font-semibold text-lg">Bureau de consultation</h4>
+                                    <p class="text-white/80 text-sm">Ambiance lumineuse et apaisante</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 3 - Espace thérapie -->
+                        <div class="gallery-item flex-shrink-0 w-80 md:w-[28rem]">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl group h-72">
+                                <img 
+                                    src="assets/images/images-cabinet-3.jpg" 
+                                    alt="Espace de thérapie avec équipement EMDR et fauteuils cuir marron" 
+                                    width="448" 
+                                    height="288"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-5">
+                                    <h4 class="text-white font-display font-semibold text-lg">Espace de thérapie</h4>
+                                    <p class="text-white/80 text-sm">Équipement professionnel adapté</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 4 - Salon cosy -->
+                        <div class="gallery-item flex-shrink-0 w-80 md:w-[28rem]">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl group h-72">
+                                <img 
+                                    src="assets/images/images-cabinet-4.jpg" 
+                                    alt="Salon cosy avec fauteuils club marron et tapis bordeaux pour consultations" 
+                                    width="448" 
+                                    height="288"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-5">
+                                    <h4 class="text-white font-display font-semibold text-lg">Salon de consultation</h4>
+                                    <p class="text-white/80 text-sm">Atmosphère chaleureuse et intimiste</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 5 - Bureau vue jardin -->
+                        <div class="gallery-item flex-shrink-0 w-80 md:w-[28rem]">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl group h-72">
+                                <img 
+                                    src="assets/images/images-cabinet-5.jpg" 
+                                    alt="Bureau de travail avec vue sur le jardin fleuri du cabinet à Annecy" 
+                                    width="448" 
+                                    height="288"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-5">
+                                    <h4 class="text-white font-display font-semibold text-lg">Bureau avec vue</h4>
+                                    <p class="text-white/80 text-sm">Vue apaisante sur le jardin</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 6 - Salle enfants -->
+                        <div class="gallery-item flex-shrink-0 w-80 md:w-[28rem]">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl group h-72">
+                                <img 
+                                    src="assets/images/images-cabinet-6.jpg" 
+                                    alt="Salle d'accueil enfants colorée avec jeux et mobilier adapté" 
+                                    width="448" 
+                                    height="288"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-5">
+                                    <h4 class="text-white font-display font-semibold text-lg">Espace enfants</h4>
+                                    <p class="text-white/80 text-sm">Accueil adapté aux plus jeunes</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 7 - Grand salon -->
+                        <div class="gallery-item flex-shrink-0 w-80 md:w-[28rem]">
+                            <div class="relative rounded-2xl overflow-hidden shadow-xl group h-72">
+                                <img 
+                                    src="assets/images/images-cabinet-7.jpg" 
+                                    alt="Grand salon de consultation familiale avec canapé et fauteuils violet" 
+                                    width="448" 
+                                    height="288"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                >
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 right-0 p-5">
+                                    <h4 class="text-white font-display font-semibold text-lg">Salon familial</h4>
+                                    <p class="text-white/80 text-sm">Espace pour consultations de groupe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <button id="gallery-prev" class="absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center hover:bg-sage-50 transition-colors z-10 group" aria-label="Image précédente">
+                        <svg class="w-6 h-6 text-text-dark group-hover:text-sage-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <button id="gallery-next" class="absolute right-2 md:-right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center hover:bg-sage-50 transition-colors z-10 group" aria-label="Image suivante">
+                        <svg class="w-6 h-6 text-text-dark group-hover:text-sage-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Indicateur de défilement mobile -->
+                <p class="text-center text-text-light text-sm mt-4 md:hidden">
+                    <span class="inline-flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+                        Glissez pour voir plus
+                    </span>
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CONTACT & LOCALISATION
+             ============================================ -->
+        <section id="contact" class="py-20 bg-gradient-to-br from-sage-300 to-sage-500" aria-labelledby="contact-title">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Informations de contact -->
+                    <div class="text-white">
+                        <span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-4">Nous contacter</span>
+                        <h2 id="contact-title" class="font-display text-3xl md:text-4xl font-bold mb-6">
+                            Prenez rendez-vous à Annecy
+                        </h2>
+                        <p class="text-lg text-white/90 mb-8 leading-relaxed">
+                            Notre équipe est à votre disposition pour répondre à vos questions et vous accompagner dans votre démarche de bien-être en Haute-Savoie.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <!-- Adresse -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Adresse</h3>
+                                    <address class="not-italic text-white/85 leading-relaxed">
+                                        89 Avenue de Genève<br>
+                                        Montée N°4, 1er étage<br>
+                                        74000 Annecy, Haute-Savoie
+                                    </address>
+                                </div>
+                            </div>
+                            
+                            <!-- Horaires -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Horaires</h3>
+                                    <p class="text-white/85">
+                                        Lundi - Vendredi : 9h - 19h<br>
+                                        <span class="text-white/70">Sur rendez-vous uniquement</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Téléphone cliquable -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Téléphone</h3>
+                                    <p class="text-white/85">
+                                        Contactez directement la praticienne de votre choix<br>
+                                        <a href="tel:+33600000000" class="underline hover:text-white transition-colors">Voir les coordonnées</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA -->
+                        <div class="mt-8">
+                            <a href="mailto:contact@psycho-sante74.com" class="inline-flex items-center bg-terracotta-300 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-terracotta-400 transition-all shadow-lg hover:shadow-xl">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                Nous écrire
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte Google Maps -->
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-80 lg:h-[28rem]">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.8!2d6.1286!3d45.9163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ffa1c0!2s89%20Avenue%20de%20Gen%C3%A8ve%2C%2074000%20Annecy!5e0!3m2!1sfr!2sfr!4v1706099200000!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localisation du Cabinet Psycho Santé 74 au 89 Avenue de Genève à Annecy sur Google Maps"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="bg-text-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Logo et description -->
+                <div class="lg:col-span-2">
+                    <img src="assets/images/logo.svg" alt="Logo Psycho Santé 74" width="180" height="48" class="h-10 w-auto brightness-0 invert mb-4" loading="lazy">
+                    <p class="text-gray-400 max-w-md leading-relaxed mb-4">
+                        Cabinet pluridisciplinaire regroupant psychologue clinicienne, diététicienne, conseillère conjugale et médiatrice familiale à Annecy. Un accompagnement personnalisé pour votre bien-être en Haute-Savoie.
+                    </p>
+                    <p class="text-gray-500 text-sm">
+                        © 2026 Psycho Santé 74. Tous droits réservés.
+                    </p>
+                </div>
+                
+                <!-- Liens rapides -->
+                <div>
+                    <h4 class="font-display font-semibold text-lg mb-4 text-sage-300">Notre équipe</h4>
+                    <ul class="space-y-2">
+                        <li><a href="pages/praticiennes/sabine-accorsini.html" class="text-gray-400 hover:text-terracotta-300 transition-colors">Sabine Accorsini - Psychologue</a></li>
+                        <li><a href="pages/praticiennes/marie-koeberle.html" class="text-gray-400 hover:text-terracotta-300 transition-colors">Marie Koeberle - Diététicienne</a></li>
+                        <li><a href="pages/praticiennes/sophie-durand.html" class="text-gray-400 hover:text-terracotta-300 transition-colors">Sophie Durand - Conseillère</a></li>
+                        <li><a href="pages/praticiennes/anne-berthion.html" class="text-gray-400 hover:text-terracotta-300 transition-colors">Anne Berthion - Médiatrice</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-display font-semibold text-lg mb-4 text-terracotta-300">Contact</h4>
+                    <address class="text-gray-400 not-italic space-y-2 text-sm leading-relaxed">
+                        <p>89 Avenue de Genève</p>
+                        <p>Montée N°4, 1er étage</p>
+                        <p>74000 Annecy</p>
+                        <p class="mt-4">
+                            <a href="#contact" class="text-terracotta-300 hover:text-terracotta-200 font-medium inline-flex items-center gap-1">
+                                Prendre rendez-vous
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                            </a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    Psychologue, diététicienne, conseillère conjugale et médiatrice familiale à Annecy (74)
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="pages/mentions-legales.html" class="text-gray-500 hover:text-gray-400 text-sm transition-colors">Mentions légales</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Back to top button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-dark" aria-label="Retour en haut">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <!-- ============================================
+         BOUTON FLOTTANT MOBILE (CTA)
+         ============================================ -->
+    <div class="fixed bottom-6 right-6 z-50 lg:hidden">
+        <a href="tel:+33600000000" class="floating-cta flex items-center justify-center w-14 h-14 bg-terracotta-300 text-white rounded-full hover:bg-terracotta-400 transition-all" aria-label="Appeler le cabinet Psycho Santé 74">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- ============================================
+         BOUTON RETOUR EN HAUT
+         ============================================ -->
+    <button id="back-to-top" class="fixed bottom-24 right-6 lg:bottom-8 bg-sage-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-sage-600 z-40" aria-label="Retour en haut de page">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
         </svg>
     </button>
 
-    <!-- JavaScript -->
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
     <script>
-        // Mobile menu toggle
+        // Menu mobile toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        
         mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
             mobileMenu.classList.toggle('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', !isOpen);
         });
 
-        // Slider functionality
-        const slider = document.getElementById('slider');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        let currentSlide = 0;
-        const slides = slider.children.length;
+        // Fermer menu mobile au clic sur lien
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
 
-        function goToSlide(index) {
-            if (index < 0) index = slides - 1;
-            if (index >= slides) index = 0;
-            currentSlide = index;
-            slider.scrollTo({ left: slider.offsetWidth * currentSlide, behavior: 'smooth' });
-        }
-
-        prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
-        nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
-
-        // Auto-advance slider
-        setInterval(() => goToSlide(currentSlide + 1), 5000);
+        // Header scroll effect
+        const header = document.getElementById('main-header');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('shadow-md');
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.classList.remove('shadow-md');
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+            
+            lastScroll = currentScroll;
+        });
 
         // Back to top button
-        const backToTop = document.getElementById('back-to-top');
+        const backToTopBtn = document.getElementById('back-to-top');
+        
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.classList.remove('opacity-0', 'invisible');
-                backToTop.classList.add('opacity-100', 'visible');
+            if (window.pageYOffset > 500) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
             } else {
-                backToTop.classList.add('opacity-0', 'invisible');
-                backToTop.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+                backToTopBtn.classList.remove('opacity-100', 'visible');
             }
         });
-        backToTop.addEventListener('click', () => {
+        
+        backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Close mobile menu on link click
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+        // Galerie navigation
+        const gallery = document.getElementById('gallery');
+        const prevBtn = document.getElementById('gallery-prev');
+        const nextBtn = document.getElementById('gallery-next');
+        const scrollAmount = 400;
+        
+        if (prevBtn && nextBtn && gallery) {
+            prevBtn.addEventListener('click', () => {
+                gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             });
+            
+            nextBtn.addEventListener('click', () => {
+                gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
+
+        // Intersection Observer pour animations au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer les sections
+        document.querySelectorAll('section:not(:first-of-type)').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(section);
         });
     </script>
 </body>

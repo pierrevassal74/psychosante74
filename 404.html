@@ -3,77 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page non trouvée | Psycho Santé 74</title>
-    <meta name="robots" content="noindex, nofollow">
+    <title>Page non trouvée | Cabinet Psycho Santé 74 Annecy</title>
+    <meta name="description" content="Page non trouvée. Retournez à l'accueil du Cabinet Psycho Santé 74 à Annecy.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#6b9080',
-                        'primary-dark': '#5a7a6b',
-                        'primary-light': '#a4c3b2',
-                        accent: '#cce3de',
-                        beige: '#f6fff8',
-                        'text-dark': '#333333',
-                        'text-light': '#666666'
+                        sage: { 300: '#A3B9A0', 500: '#6b9068', 600: '#5a7a58' },
+                        terracotta: { 300: '#D99F8C', 400: '#c98a75' },
+                        cream: { 50: '#FDFCF9', 100: '#F5F0E1' },
+                        text: { dark: '#2D3A3A', medium: '#4A5858', light: '#6B7B7B' }
                     },
                     fontFamily: {
-                        sans: ['Open Sans', 'sans-serif']
+                        'display': ['Cormorant Garamond', 'serif'],
+                        'sans': ['Nunito', 'sans-serif']
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-sans text-text-light bg-beige min-h-screen flex flex-col">
+<body class="font-sans bg-cream-50 min-h-screen flex flex-col">
     <!-- Header simplifié -->
-    <header class="bg-white shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-            <a href="/index.html" class="flex items-center">
-                <img src="/assets/images/logo.svg" alt="Psycho Santé 74" class="h-12">
+    <header class="bg-white shadow-sm py-4">
+        <div class="max-w-7xl mx-auto px-4">
+            <a href="/" class="inline-block">
+                <img src="assets/images/logo.svg" alt="Psycho Santé 74" width="160" height="40" class="h-10 w-auto">
             </a>
         </div>
     </header>
 
     <!-- Contenu 404 -->
-    <main class="flex-grow flex items-center justify-center py-16">
-        <div class="text-center px-4">
+    <main class="flex-grow flex items-center justify-center py-20">
+        <div class="max-w-xl mx-auto px-4 text-center">
             <div class="mb-8">
-                <span class="text-9xl font-bold text-primary opacity-20">404</span>
+                <span class="text-9xl font-display font-bold text-sage-300">404</span>
             </div>
-            <h1 class="text-3xl md:text-4xl font-bold text-text-dark mb-4">Page non trouvée</h1>
-            <p class="text-lg text-text-light mb-8 max-w-md mx-auto">
-                Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+            
+            <h1 class="font-display text-3xl md:text-4xl font-bold text-text-dark mb-4">
+                Page non trouvée
+            </h1>
+            
+            <p class="text-text-medium text-lg mb-8 leading-relaxed">
+                Désolé, la page que vous recherchez n'existe pas ou a été déplacée. 
+                Nous vous invitons à retourner à l'accueil ou à explorer nos services.
             </p>
-            <div class="space-y-4 md:space-y-0 md:space-x-4">
-                <a href="/index.html" class="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-primary-dark transition-colors font-semibold">
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="/" class="inline-flex items-center justify-center bg-sage-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-sage-600 transition-all shadow-md">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
                     Retour à l'accueil
                 </a>
-                <a href="/index.html#contact" class="inline-block border-2 border-primary text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-colors font-semibold">
-                    Nous contacter
+                <a href="/#contact" class="inline-flex items-center justify-center bg-terracotta-300 text-white px-8 py-3 rounded-full font-semibold hover:bg-terracotta-400 transition-all shadow-md">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    Prendre RDV
                 </a>
             </div>
             
             <!-- Liens utiles -->
-            <div class="mt-12 pt-8 border-t border-gray-200">
-                <p class="text-text-light mb-4">Pages populaires :</p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="/pages/praticiennes/sabine-accorsini.html" class="text-primary hover:underline">Sabine Accorsini</a>
-                    <a href="/pages/praticiennes/marie-koeberle.html" class="text-primary hover:underline">Marie Koeberle</a>
-                    <a href="/pages/specialites/tcc.html" class="text-primary hover:underline">TCC</a>
-                    <a href="/pages/specialites/emdr.html" class="text-primary hover:underline">EMDR</a>
+            <div class="border-t border-sage-200 pt-8">
+                <p class="text-text-light text-sm mb-4">Pages populaires :</p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <a href="pages/praticiennes/sabine-accorsini.html" class="text-sage-500 hover:text-sage-600 hover:underline">Sabine Accorsini - Psychologue</a>
+                    <a href="pages/praticiennes/marie-koeberle.html" class="text-terracotta-400 hover:text-terracotta-500 hover:underline">Marie Koeberle - Diététicienne</a>
+                    <a href="pages/specialites/tcc.html" class="text-sage-500 hover:text-sage-600 hover:underline">TCC</a>
+                    <a href="pages/specialites/emdr.html" class="text-sage-500 hover:text-sage-600 hover:underline">EMDR</a>
                 </div>
             </div>
         </div>
@@ -81,8 +88,8 @@
 
     <!-- Footer simplifié -->
     <footer class="bg-text-dark text-white py-6">
-        <div class="max-w-6xl mx-auto px-4 text-center text-gray-400 text-sm">
-            <p>© 2026 Psycho Santé 74. Tous droits réservés.</p>
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">© 2026 Cabinet Psycho Santé 74 - Annecy</p>
         </div>
     </footer>
 </body>

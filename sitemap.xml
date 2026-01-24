@@ -3,7 +3,7 @@
     <!-- Page d'accueil -->
     <url>
         <loc>https://www.psycho-sante74.com/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -11,25 +11,25 @@
     <!-- Pages Praticiennes -->
     <url>
         <loc>https://www.psycho-sante74.com/pages/praticiennes/sabine-accorsini.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/praticiennes/marie-koeberle.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/praticiennes/sophie-durand.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/praticiennes/anne-berthion.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -37,45 +37,45 @@
     <!-- Pages Spécialités -->
     <url>
         <loc>https://www.psycho-sante74.com/pages/specialites/tcc.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/specialites/emdr.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/specialites/dietetique.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/specialites/sexologie.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/specialites/pnl.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.psycho-sante74.com/pages/specialites/kinesiologie.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
-    <!-- Pages légales -->
+    <!-- Page Mentions légales -->
     <url>
         <loc>https://www.psycho-sante74.com/pages/mentions-legales.html</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-01-24</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
