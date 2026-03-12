@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.psycho-sante74.com/sitemap-index.xml
+Sitemap: https://www.psycho-sante74.com/sitemap.xml
