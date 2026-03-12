@@ -1,0 +1,191 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout
+  title="Psycho santé 74"
+  description="5 professionnels de santé à Annecy, psychologue, psychothérapeute, coach minceur, diététicienne, addictologue, sexologue, TCC, EMDR"
+>
+  <!-- HERO / Slider remplacé par une grille d'images -->
+  <section class="bg-primary/10">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+        <img src="/images/images-cabinet-1.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="eager" />
+        <img src="/images/images-cabinet-2.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="eager" />
+        <img src="/images/images-cabinet-3.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded hidden md:block" loading="eager" />
+        <img src="/images/images-cabinet-4.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="lazy" />
+        <img src="/images/images-cabinet-5.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="lazy" />
+        <img src="/images/images-cabinet-6.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded hidden md:block" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- QUI SOMMES-NOUS -->
+  <section id="equipe" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="inline-block bg-primary text-white px-4 py-1 text-xs font-bold uppercase tracking-widest mb-6">
+        QUI SOMMES-NOUS ?
+      </div>
+      <div class="prose-content">
+        <p>
+          Le cabinet Psycho Santé 74 réunit plusieurs professionnels de santé dans un cadre bienveillant,
+          à Annecy. Notre équipe pluridisciplinaire vous accompagne avec des approches complémentaires :
+          psychologie, psychanalyse, diététique, sexologie, EMDR, TCC, kinésiologie et PNL.
+        </p>
+        <p>
+          Chaque praticien du cabinet possède une expertise et une sensibilité propres, pour répondre
+          au mieux à vos besoins spécifiques.
+        </p>
+      </div>
+
+      <!-- Cartes thérapeutes -->
+      <div class="mt-10 grid gap-6 sm:grid-cols-2">
+        <a href="/sabine-accorsini/" class="practitioner-card group hover:shadow-xl transition-shadow">
+          <img src="/images/Portrait-Sabine-Accorsini-1.jpg" alt="Sabine Accorsini" class="w-full h-56 object-cover" loading="lazy" />
+          <div class="p-4">
+            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Sabine Accorsini</h2>
+            <p class="text-sm text-gray-500">Psychologue – Psychanalyste</p>
+          </div>
+        </a>
+        <a href="/marie-koeberle/" class="practitioner-card group hover:shadow-xl transition-shadow">
+          <div class="w-full h-56 bg-primary/10 flex items-center justify-center">
+            <span class="text-primary text-4xl font-bold">MK</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Marie Koeberle</h2>
+            <p class="text-sm text-gray-500">Thérapeute</p>
+          </div>
+        </a>
+        <a href="/sophie-durand/" class="practitioner-card group hover:shadow-xl transition-shadow">
+          <div class="w-full h-56 bg-primary/10 flex items-center justify-center">
+            <span class="text-primary text-4xl font-bold">SD</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Sophie Durand</h2>
+            <p class="text-sm text-gray-500">Thérapeute</p>
+          </div>
+        </a>
+        <a href="/anne-berthion/" class="practitioner-card group hover:shadow-xl transition-shadow">
+          <div class="w-full h-56 bg-primary/10 flex items-center justify-center">
+            <span class="text-primary text-4xl font-bold">AB</span>
+          </div>
+          <div class="p-4">
+            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Anne Berthion</h2>
+            <p class="text-sm text-gray-500">Thérapeute</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI CONSULTER -->
+  <section id="consult" class="py-16 bg-primary/10">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="inline-block bg-primary text-white px-4 py-1 text-xs font-bold uppercase tracking-widest mb-6">
+        POURQUOI CONSULTER ?
+      </div>
+      <div class="prose-content">
+        <p>
+          Les motifs de consultations peuvent être divers et chaque personne a des besoins qui lui sont
+          propres et légitimes dans sa démarche à venir consulter.
+        </p>
+        <p>
+          Quel que soit notre âge, il peut tout à chacun nous arriver d'être confrontés à des peurs,
+          du stress, de l'anxiété ou de la tristesse que nous n'arrivons pas à surmonter seul.
+        </p>
+        <p>
+          <strong>Il n'y a pas de bonnes ou de mauvaises raisons pour venir consulter</strong>, il y a
+          seulement un désir d'aller mieux face à un mal être pouvant provenir d'événements difficiles
+          de vie (séparation, deuil, conflits, décisions…) ou de troubles psychologiques dont les impacts
+          se répercutent sur le quotidien (trouble obsessionnel compulsif, phobies, dépression, burn out,
+          agoraphobie, traumatisme…).
+        </p>
+        <p>
+          Venir consulter un psychologue ne signifie pas que l'on ne dispose pas des ressources internes
+          pour aller mieux ou que l'on est « faible ». Au contraire, cette démarche souvent difficile
+          nécessite d'aller puiser dans ses ressources et fait appel à une certaine force afin de faire face
+          aux difficultés rencontrées en venant solliciter un professionnel.
+        </p>
+      </div>
+
+      <!-- Liens vers approches -->
+      <div class="mt-10">
+        <h2 class="font-bold text-lg mb-4 text-gray-700 uppercase tracking-wide">Nos approches thérapeutiques</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {[
+            { label: 'EMDR', href: '/emdr/' },
+            { label: 'TCC', href: '/tcc/' },
+            { label: 'Sexologie', href: '/sexologie/' },
+            { label: 'Diététique', href: '/dietetique/' },
+            { label: 'Kinésiologie', href: '/kinesiologie/' },
+            { label: 'PNL', href: '/pnl/' },
+          ].map(({ label, href }) => (
+            <a
+              href={href}
+              class="bg-white border border-primary/30 text-primary font-semibold py-3 px-4 rounded text-center hover:bg-primary hover:text-white transition-colors text-sm uppercase tracking-wide"
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS LOCAUX -->
+  <section id="locaux" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-2xl font-bold uppercase tracking-wide text-primary mb-8">
+        NOTRE CABINET DE CONSULTATIONS
+      </h1>
+      <!-- Galerie cabinet -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-10">
+        {['images-cabinet-1','images-cabinet-2','images-cabinet-3','images-cabinet-4',
+          'images-cabinet-5','images-cabinet-6','images-cabinet-7'].map((img) => (
+          <img
+            src={`/images/${img}.jpg`}
+            alt="Cabinet Psycho Santé 74 Annecy"
+            class="w-full h-32 object-cover rounded"
+            loading="lazy"
+          />
+        ))}
+      </div>
+
+      <!-- Adresse + carte -->
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="font-bold text-lg mb-3">Adresse</h2>
+          <address class="not-italic text-gray-700 leading-relaxed">
+            <strong>Cabinet Psycho Santé 74</strong><br />
+            89 Avenue de Genève<br />
+            Montée N° 4 – 1er étage<br />
+            74000 Annecy
+          </address>
+          <div class="mt-6">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=89+Avenue+de+Gen%C3%A8ve+Annecy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-primary text-white px-5 py-2 rounded font-semibold hover:bg-primary-dark transition-colors text-sm"
+            >
+              Voir sur Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Carte intégrée -->
+        <div id="plan" class="rounded overflow-hidden shadow-md h-64">
+          <iframe
+            title="Localisation du cabinet Psycho Santé 74"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=89+Avenue+de+Gen%C3%A8ve+74000+Annecy"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

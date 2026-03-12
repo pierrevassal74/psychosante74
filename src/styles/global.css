@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-gray-800 bg-white;
+  }
+  h1, h2, h3 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  /* ── Navigation dropdown ── */
+  .nav-item {
+    @apply relative;
+  }
+  .nav-item:hover .dropdown {
+    @apply block;
+  }
+  .dropdown {
+    @apply hidden absolute top-full left-0 bg-white shadow-lg min-w-[200px] z-50;
+  }
+  .dropdown a {
+    @apply block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors;
+  }
+
+  /* ── Page hero banner ── */
+  .page-hero {
+    @apply bg-primary text-white py-12 px-6 text-center;
+  }
+  .page-hero h1 {
+    @apply text-3xl md:text-4xl font-bold tracking-wide uppercase;
+  }
+
+  /* ── Section ── */
+  .section-content {
+    @apply max-w-4xl mx-auto px-6 py-12;
+  }
+
+  /* ── Practitioner card ── */
+  .practitioner-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+
+  /* ── Prose content ── */
+  .prose-content h2 {
+    @apply text-xl font-bold text-primary mt-6 mb-3;
+  }
+  .prose-content p {
+    @apply mb-4 leading-relaxed;
+  }
+  .prose-content ul {
+    @apply list-disc pl-6 mb-4 space-y-1;
+  }
+  .prose-content strong {
+    @apply font-semibold text-gray-900;
+  }
+  .prose-content blockquote {
+    @apply border-l-4 border-primary pl-4 italic text-gray-600 my-4;
+  }
+}

@@ -1,0 +1,32 @@
+# Redirections des anciennes URLs WordPress vers les nouvelles URLs Astro
+
+# Pages ?p=XXX → URLs propres
+/?p=645    /tcc/         301
+/?p=647    /emdr/        301
+/?p=651    /dietetique/  301
+/?p=653    /sexologie/   301
+/?p=1503   /kinesiologie/ 301
+/?p=27900  /pnl/         301
+/?p=28745  /sophie-durand/ 301
+/?p=28850  /anne-berthion/ 301
+/?p=28644  /marie-koeberle/ 301
+
+# Trailing slash normalization
+/emdr      /emdr/         301
+/tcc       /tcc/          301
+/pnl       /pnl/          301
+/sexologie /sexologie/    301
+/dietetique /dietetique/  301
+/kinesiologie /kinesiologie/ 301
+/sabine-accorsini /sabine-accorsini/ 301
+/marie-koeberle /marie-koeberle/ 301
+/sophie-durand /sophie-durand/ 301
+/anne-berthion /anne-berthion/ 301
+/mentions-legales /mentions-legales/ 301
+
+# Anciens chemins WordPress à supprimer (→ accueil)
+/feed/*    /  301
+/wp-json/* /  301
+/author/*  /  301
+/tag/*     /  301
+/page/*    /  301

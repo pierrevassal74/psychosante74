@@ -1,0 +1,132 @@
+---
+const currentPath = Astro.url.pathname;
+---
+<header class="bg-white shadow-sm sticky top-0 z-40">
+  <!-- Secondary bar -->
+  <div class="bg-gray-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 flex justify-end py-1">
+      <a href="/#plan" class="text-xs text-gray-500 hover:text-primary transition-colors">
+        NOUS TROUVER À ANNECY
+      </a>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0">
+        <img
+          src="/images/logo-6-copie-copie.svg"
+          width="240"
+          height="35"
+          alt="PSYCHO SANTÉ 74"
+          class="h-9 w-auto"
+        />
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Navigation principale">
+        <a href="/#equipe" class="px-3 py-2 text-sm font-semibold text-gray-700 hover:text-primary transition-colors uppercase tracking-wide">
+          Qui sommes-nous ?
+        </a>
+        <a href="/#consult" class="px-3 py-2 text-sm font-semibold text-gray-700 hover:text-primary transition-colors uppercase tracking-wide">
+          Pourquoi consulter ?
+        </a>
+
+        <!-- NOS APPROCHES dropdown -->
+        <div class="nav-item group">
+          <button class="px-3 py-2 text-sm font-semibold text-gray-700 group-hover:text-primary transition-colors uppercase tracking-wide flex items-center gap-1">
+            Nos approches
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="dropdown">
+            <a href="/dietetique/">Diététique</a>
+            <a href="/emdr/">EMDR</a>
+            <a href="/sexologie/">Sexologie</a>
+            <a href="/tcc/">TCC</a>
+            <a href="/kinesiologie/">Kinésiologie</a>
+            <a href="/pnl/">PNL</a>
+          </div>
+        </div>
+
+        <!-- PRENDRE RDV dropdown -->
+        <div class="nav-item group">
+          <button class="px-3 py-2 text-sm font-semibold text-gray-700 group-hover:text-primary transition-colors uppercase tracking-wide flex items-center gap-1">
+            Prendre rendez-vous
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="dropdown">
+            <a href="/sabine-accorsini/#consultation">Sabine Accorsini</a>
+            <a href="/marie-koeberle/#consultation">Marie Koeberle</a>
+            <a href="/sophie-durand/">Sophie Durand</a>
+            <a href="/anne-berthion/">Anne Berthion</a>
+          </div>
+        </div>
+
+        <a href="/#locaux" class="px-3 py-2 text-sm font-semibold text-gray-700 hover:text-primary transition-colors uppercase tracking-wide">
+          Nos locaux
+        </a>
+      </nav>
+
+      <!-- Mobile burger -->
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 text-gray-600 hover:text-primary"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+      >
+        <svg id="icon-menu" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 pb-4">
+    <nav class="max-w-6xl mx-auto px-4 flex flex-col gap-1 pt-2">
+      <a href="/#equipe" class="py-2 text-sm font-semibold text-gray-700 uppercase">Qui sommes-nous ?</a>
+      <a href="/#consult" class="py-2 text-sm font-semibold text-gray-700 uppercase">Pourquoi consulter ?</a>
+      <div class="py-1">
+        <p class="py-2 text-sm font-semibold text-primary uppercase">Nos approches</p>
+        <div class="pl-4 flex flex-col gap-1">
+          <a href="/dietetique/" class="py-1 text-sm text-gray-600">Diététique</a>
+          <a href="/emdr/" class="py-1 text-sm text-gray-600">EMDR</a>
+          <a href="/sexologie/" class="py-1 text-sm text-gray-600">Sexologie</a>
+          <a href="/tcc/" class="py-1 text-sm text-gray-600">TCC</a>
+          <a href="/kinesiologie/" class="py-1 text-sm text-gray-600">Kinésiologie</a>
+          <a href="/pnl/" class="py-1 text-sm text-gray-600">PNL</a>
+        </div>
+      </div>
+      <div class="py-1">
+        <p class="py-2 text-sm font-semibold text-primary uppercase">Prendre rendez-vous</p>
+        <div class="pl-4 flex flex-col gap-1">
+          <a href="/sabine-accorsini/#consultation" class="py-1 text-sm text-gray-600">Sabine Accorsini</a>
+          <a href="/marie-koeberle/#consultation" class="py-1 text-sm text-gray-600">Marie Koeberle</a>
+          <a href="/sophie-durand/" class="py-1 text-sm text-gray-600">Sophie Durand</a>
+          <a href="/anne-berthion/" class="py-1 text-sm text-gray-600">Anne Berthion</a>
+        </div>
+      </div>
+      <a href="/#locaux" class="py-2 text-sm font-semibold text-gray-700 uppercase">Nos locaux</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconMenu = document.getElementById('icon-menu');
+  const iconClose = document.getElementById('icon-close');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden', isOpen);
+    iconMenu?.classList.toggle('hidden', !isOpen);
+    iconClose?.classList.toggle('hidden', isOpen);
+    btn?.setAttribute('aria-expanded', String(!isOpen));
+  });
+</script>

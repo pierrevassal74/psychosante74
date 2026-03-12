@@ -1,0 +1,100 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout
+  title="Sabine Accorsini – Psychologue Psychanalyste – Psycho Santé 74 Annecy"
+  description="Sabine Accorsini, psychologue et psychanalyste à Annecy. Reçoit adultes, enfants et adolescents. Consultations au Cabinet Psycho Santé 74."
+>
+  <!-- Présentation -->
+  <section id="mag" class="bg-primary/10 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Thérapeute</p>
+          <h1 class="text-3xl font-bold mb-2">SABINE ACCORSINI</h1>
+          <h2 class="text-xl text-gray-600 mb-6">Psychologue – Psychanalyste</h2>
+
+          <div class="prose-content">
+            <p>
+              Je propose de recevoir les adultes, enfants et adolescents dont les problématiques
+              peuvent être les suivantes :
+            </p>
+            <ul>
+              <li>États d'angoisse, de sensation d'empêchement ou d'inhibition dans diverses situations de la vie quotidienne : au travail, à l'école, dans le couple, les relations parents-enfant…</li>
+              <li>État dépressif suite à un choc émotionnel, une perte, ou sans évènement déclenchant manifeste.</li>
+              <li>Répétition de la survenue de situations d'échec.</li>
+              <li>Maux affectant le corps dont les phénomènes psychosomatiques, vécu psychologique douloureux d'une maladie somatique…</li>
+              <li>Difficultés en lien avec une addiction (troubles du comportement alimentaire par exemple…)</li>
+            </ul>
+            <p>
+              Chacun et chacune est le(a) bienvenu(e) avec sa question, son envie d'aller mieux et se connaître.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="/images/Portrait-Sabine-Accorsini-1.jpg"
+            alt="Portrait de Sabine Accorsini, psychologue psychanalyste"
+            class="w-full rounded-lg shadow-md object-cover"
+            width="600"
+            height="400"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parcours -->
+  <section id="next" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-xl font-bold text-primary mb-6">Mon parcours</h2>
+        <div class="prose-content">
+          <blockquote>
+            Psychologue clinicienne de formation, j'ai une longue expérience en milieu hospitalier en
+            services de médecine, dans la prise en charge des patients et en soutien des équipes soignantes.
+          </blockquote>
+          <p>
+            J'ai également une pratique libérale en cabinet depuis dix ans.
+            C'est la psychanalyse qui fonde ma pratique et oriente mon écoute de la parole, c'est à dire
+            en accordant toute sa valeur au savoir inconscient qui nous habite.
+            Mes principales références théoriques en psychanalyse sont freudiennes et lacaniennes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation & Contact -->
+  <section id="consultation" class="py-16 bg-primary/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-8">Prendre rendez-vous</h2>
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <!-- Carte de visite -->
+        <div>
+          <img
+            src="/images/CARTE-SABINE-ACCORSINI-2.jpg"
+            alt="Carte de visite Sabine Accorsini"
+            class="w-full rounded-lg shadow"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Coordonnées -->
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="font-bold text-lg mb-4">Contact</h3>
+          <div class="prose-content">
+            <p>
+              Pour prendre rendez-vous ou pour toute autre demande d'information, je suis joignable au :
+            </p>
+            <p class="text-xl font-bold text-primary">
+              <a href="tel:+33788598889" class="hover:text-primary-dark">07 88 59 88 89</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
