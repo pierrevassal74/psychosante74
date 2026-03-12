@@ -2,77 +2,100 @@
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 <MainLayout
-  title="Psycho santé 74"
-  description="5 professionnels de santé à Annecy, psychologue, psychothérapeute, coach minceur, diététicienne, addictologue, sexologue, TCC, EMDR"
+  title="Cabinet Psycho Santé 74 – Psychologues et Thérapeutes à Annecy"
+  description="5 professionnels de santé à Annecy : psychologue, psychanalyste, diététicienne, conseillère conjugale, médiatrice familiale. TCC, EMDR, sexologie, kinésiologie, PNL."
 >
-  <!-- HERO / Slider remplacé par une grille d'images -->
-  <section class="bg-primary/10">
-    <div class="max-w-6xl mx-auto px-4 py-10">
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
-        <img src="/images/images-cabinet-1.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="eager" />
-        <img src="/images/images-cabinet-2.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="eager" />
-        <img src="/images/images-cabinet-3.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded hidden md:block" loading="eager" />
-        <img src="/images/images-cabinet-4.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="lazy" />
-        <img src="/images/images-cabinet-5.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded" loading="lazy" />
-        <img src="/images/images-cabinet-6.jpg" alt="Cabinet Psycho Santé 74" class="w-full h-48 object-cover rounded hidden md:block" loading="lazy" />
-      </div>
-    </div>
+  <!-- HERO -->
+  <section class="py-16 px-6 text-center bg-white">
+    <h1 class="text-3xl md:text-4xl font-bold uppercase tracking-wide text-gray-800 mb-3">
+      CABINET PSYCHO SANTÉ 74
+    </h1>
+    <p class="text-lg font-semibold text-primary uppercase tracking-widest">
+      4 PROFESSIONNELS DE SANTÉ À VOTRE ÉCOUTE
+    </p>
   </section>
 
   <!-- QUI SOMMES-NOUS -->
-  <section id="equipe" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="inline-block bg-primary text-white px-4 py-1 text-xs font-bold uppercase tracking-widest mb-6">
-        QUI SOMMES-NOUS ?
-      </div>
-      <div class="prose-content">
-        <p>
-          Le cabinet Psycho Santé 74 réunit plusieurs professionnels de santé dans un cadre bienveillant,
-          à Annecy. Notre équipe pluridisciplinaire vous accompagne avec des approches complémentaires :
-          psychologie, psychanalyse, diététique, sexologie, EMDR, TCC, kinésiologie et PNL.
-        </p>
-        <p>
-          Chaque praticien du cabinet possède une expertise et une sensibilité propres, pour répondre
-          au mieux à vos besoins spécifiques.
-        </p>
-      </div>
+  <section id="equipe" class="py-12 bg-white border-t border-gray-100">
+    <div class="max-w-5xl mx-auto px-6">
 
-      <!-- Cartes thérapeutes -->
-      <div class="mt-10 grid gap-6 sm:grid-cols-2">
-        <a href="/sabine-accorsini/" class="practitioner-card group hover:shadow-xl transition-shadow">
-          <img src="/images/Portrait-Sabine-Accorsini-1.jpg" alt="Sabine Accorsini" class="w-full h-56 object-cover" loading="lazy" />
+      <!-- Grille 4 praticiens -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Sabine Accorsini -->
+        <a href="/sabine-accorsini/" class="practitioner-card group hover:shadow-xl transition-shadow text-center">
+          <img
+            src="/images/sabine.jpg"
+            alt="psychologue annecy"
+            title="sabine"
+            class="w-full h-56 object-cover"
+            loading="eager"
+          />
           <div class="p-4">
-            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Sabine Accorsini</h2>
-            <p class="text-sm text-gray-500">Psychologue – Psychanalyste</p>
+            <h2 class="font-bold text-base group-hover:text-primary transition-colors">SABINE ACCORSINI</h2>
+            <p class="text-sm text-gray-600 font-semibold mt-1">PSYCHOLOGUE CLINICIENNE ET PSYCHANALYSTE</p>
+            <p class="text-xs text-gray-500 mt-1">Diplômée de l'université Paris X- Nanterre</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-primary border border-primary px-3 py-1 rounded hover:bg-primary hover:text-white transition-colors">
+              Plus d'infos
+            </span>
           </div>
         </a>
-        <a href="/marie-koeberle/" class="practitioner-card group hover:shadow-xl transition-shadow">
-          <div class="w-full h-56 bg-primary/10 flex items-center justify-center">
-            <span class="text-primary text-4xl font-bold">MK</span>
-          </div>
+
+        <!-- Marie Koeberle -->
+        <a href="/marie-koeberle/" class="practitioner-card group hover:shadow-xl transition-shadow text-center">
+          <img
+            src="/images/marie-320-240.jpg"
+            alt="Naomi Andriason"
+            title="marie-320-240"
+            class="w-full h-56 object-cover"
+            loading="lazy"
+          />
           <div class="p-4">
-            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Marie Koeberle</h2>
-            <p class="text-sm text-gray-500">Thérapeute</p>
+            <h2 class="font-bold text-base group-hover:text-primary transition-colors">MARIE KOEBERLE</h2>
+            <p class="text-sm text-gray-600 font-semibold mt-1">Diététicienne Spécialisée dans l'alimentation du sportif d'endurance</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-primary border border-primary px-3 py-1 rounded hover:bg-primary hover:text-white transition-colors">
+              Plus d'infos
+            </span>
           </div>
         </a>
-        <a href="/sophie-durand/" class="practitioner-card group hover:shadow-xl transition-shadow">
-          <div class="w-full h-56 bg-primary/10 flex items-center justify-center">
-            <span class="text-primary text-4xl font-bold">SD</span>
-          </div>
+
+        <!-- Sophie Durand -->
+        <a href="/sophie-durand/" class="practitioner-card group hover:shadow-xl transition-shadow text-center">
+          <img
+            src="/images/sophie-320-240.jpg"
+            alt="Naomi Andriason"
+            title="sophie-320-240"
+            class="w-full h-56 object-cover"
+            loading="lazy"
+          />
           <div class="p-4">
-            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Sophie Durand</h2>
-            <p class="text-sm text-gray-500">Thérapeute</p>
+            <h2 class="font-bold text-base group-hover:text-primary transition-colors">SOPHIE DURAND</h2>
+            <p class="text-sm text-gray-600 font-semibold mt-1">Conseillère Conjugale et Familiale</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-primary border border-primary px-3 py-1 rounded hover:bg-primary hover:text-white transition-colors">
+              Plus d'infos
+            </span>
           </div>
         </a>
-        <a href="/anne-berthion/" class="practitioner-card group hover:shadow-xl transition-shadow">
-          <div class="w-full h-56 bg-primary/10 flex items-center justify-center">
-            <span class="text-primary text-4xl font-bold">AB</span>
-          </div>
+
+        <!-- Anne Berthion -->
+        <a href="/anne-berthion/" class="practitioner-card group hover:shadow-xl transition-shadow text-center">
+          <img
+            src="/images/anne-320-240.jpg"
+            alt="Naomi Andriason"
+            title="anne-320-240"
+            class="w-full h-56 object-cover"
+            loading="lazy"
+          />
           <div class="p-4">
-            <h2 class="font-bold text-lg group-hover:text-primary transition-colors">Anne Berthion</h2>
-            <p class="text-sm text-gray-500">Thérapeute</p>
+            <h2 class="font-bold text-base group-hover:text-primary transition-colors">ANNE BERTHION</h2>
+            <p class="text-sm text-gray-600 font-semibold mt-1">Médiatrice Familiale</p>
+            <p class="text-xs text-gray-500 mt-1">Diplôme d'État de médiation familiale<br />Membre de l'APMF</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-primary border border-primary px-3 py-1 rounded hover:bg-primary hover:text-white transition-colors">
+              Plus d'infos
+            </span>
           </div>
         </a>
+
       </div>
     </div>
   </section>
@@ -80,12 +103,10 @@ import MainLayout from '../layouts/MainLayout.astro';
   <!-- POURQUOI CONSULTER -->
   <section id="consult" class="py-16 bg-primary/10">
     <div class="max-w-4xl mx-auto px-6">
-      <div class="inline-block bg-primary text-white px-4 py-1 text-xs font-bold uppercase tracking-widest mb-6">
-        POURQUOI CONSULTER ?
-      </div>
+      <h1 class="text-2xl font-bold uppercase tracking-wide text-gray-800 mb-6">POURQUOI CONSULTER ?</h1>
       <div class="prose-content">
         <p>
-          Les motifs de consultations peuvent être divers et chaque personne a des besoins qui lui sont
+          Les motifs de consultations peuvent être divers et chaque personne à des besoins qui lui sont
           propres et légitimes dans sa démarche à venir consulter.
         </p>
         <p>
@@ -106,28 +127,6 @@ import MainLayout from '../layouts/MainLayout.astro';
           aux difficultés rencontrées en venant solliciter un professionnel.
         </p>
       </div>
-
-      <!-- Liens vers approches -->
-      <div class="mt-10">
-        <h2 class="font-bold text-lg mb-4 text-gray-700 uppercase tracking-wide">Nos approches thérapeutiques</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          {[
-            { label: 'EMDR', href: '/emdr/' },
-            { label: 'TCC', href: '/tcc/' },
-            { label: 'Sexologie', href: '/sexologie/' },
-            { label: 'Diététique', href: '/dietetique/' },
-            { label: 'Kinésiologie', href: '/kinesiologie/' },
-            { label: 'PNL', href: '/pnl/' },
-          ].map(({ label, href }) => (
-            <a
-              href={href}
-              class="bg-white border border-primary/30 text-primary font-semibold py-3 px-4 rounded text-center hover:bg-primary hover:text-white transition-colors text-sm uppercase tracking-wide"
-            >
-              {label}
-            </a>
-          ))}
-        </div>
-      </div>
     </div>
   </section>
 
@@ -137,55 +136,96 @@ import MainLayout from '../layouts/MainLayout.astro';
       <h1 class="text-2xl font-bold uppercase tracking-wide text-primary mb-8">
         NOTRE CABINET DE CONSULTATIONS
       </h1>
-      <!-- Galerie cabinet -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-10">
-        {['images-cabinet-1','images-cabinet-2','images-cabinet-3','images-cabinet-4',
-          'images-cabinet-5','images-cabinet-6','images-cabinet-7'].map((img) => (
-          <img
-            src={`/images/${img}.jpg`}
-            alt="Cabinet Psycho Santé 74 Annecy"
-            class="w-full h-32 object-cover rounded"
-            loading="lazy"
-          />
-        ))}
-      </div>
-
-      <!-- Adresse + carte -->
-      <div class="grid md:grid-cols-2 gap-8 items-start">
-        <div>
-          <h2 class="font-bold text-lg mb-3">Adresse</h2>
-          <address class="not-italic text-gray-700 leading-relaxed">
-            <strong>Cabinet Psycho Santé 74</strong><br />
-            89 Avenue de Genève<br />
-            Montée N° 4 – 1er étage<br />
-            74000 Annecy
-          </address>
-          <div class="mt-6">
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=89+Avenue+de+Gen%C3%A8ve+Annecy"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-block bg-primary text-white px-5 py-2 rounded font-semibold hover:bg-primary-dark transition-colors text-sm"
-            >
-              Voir sur Google Maps
-            </a>
-          </div>
-        </div>
-
-        <!-- Carte intégrée -->
-        <div id="plan" class="rounded overflow-hidden shadow-md h-64">
-          <iframe
-            title="Localisation du cabinet Psycho Santé 74"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=89+Avenue+de+Gen%C3%A8ve+74000+Annecy"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
-        </div>
+      <!-- 2 images du cabinet (fidèle à l'original) -->
+      <div class="grid grid-cols-2 gap-4 mb-10">
+        <img
+          src="/images/images-cabinet-6.jpg"
+          alt=""
+          class="w-full h-56 object-cover rounded"
+          loading="lazy"
+        />
+        <img
+          src="/images/images-cabinet-2.jpg"
+          alt=""
+          class="w-full h-56 object-cover rounded"
+          loading="lazy"
+        />
       </div>
     </div>
   </section>
+
+  <!-- NOUS TROUVER À ANNECY -->
+  <section id="plan" class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold uppercase tracking-wide text-gray-800 mb-10 text-center">
+        NOUS TROUVER À ANNECY
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Contacts praticiens -->
+        <div class="space-y-8">
+
+          <div>
+            <h3 class="font-bold uppercase tracking-wide text-sm text-primary mb-2">SABINE ACCORSINI</h3>
+            <p class="text-sm">Tél. : <a href="tel:+33788598889" class="hover:text-primary">07 88 59 88 89</a></p>
+            <p class="text-sm">E-mail : <a href="mailto:sabine.accorsini.psy@gmail.com" class="hover:text-primary">sabine.accorsini.psy@gmail.com</a></p>
+          </div>
+
+          <div>
+            <h3 class="font-bold uppercase tracking-wide text-sm text-primary mb-2">MARIE KOEBERLE</h3>
+            <p class="text-sm">Tél. : <a href="tel:+33766662054" class="hover:text-primary">07 66 66 20 54</a></p>
+            <p class="text-sm">E-mail : <a href="mailto:contact@mariediet.com" class="hover:text-primary">contact@mariediet.com</a></p>
+            <p class="text-sm">Site web : <a href="https://www.mariediet.com/" target="_blank" rel="noopener noreferrer" class="hover:text-primary">www.mariediet.com</a></p>
+          </div>
+
+          <div>
+            <h3 class="font-bold uppercase tracking-wide text-sm text-primary mb-2">SOPHIE DURAND</h3>
+            <p class="text-sm">Tél. : <a href="tel:+33670619603" class="hover:text-primary">06 70 61 96 03</a></p>
+            <p class="text-sm">E-mail : <a href="mailto:sdurand.ccf@gmail.com" class="hover:text-primary">sdurand.ccf@gmail.com</a></p>
+          </div>
+
+          <div>
+            <h3 class="font-bold uppercase tracking-wide text-sm text-primary mb-2">ANNE BERTHION</h3>
+            <p class="text-sm">Tél. : <a href="tel:+33667893238" class="hover:text-primary">06 67 89 32 38</a></p>
+            <p class="text-sm">E-mail : <a href="mailto:aberthion.instantmediation@gmail.com" class="hover:text-primary">aberthion.instantmediation@gmail.com</a></p>
+            <p class="text-sm">Site web : <a href="https://mediation74.fr/" target="_blank" rel="noopener noreferrer" class="hover:text-primary">mediation74.fr</a></p>
+          </div>
+
+          <div>
+            <h3 class="font-bold uppercase tracking-wide text-sm text-primary mb-2">NAOMI ANDRIASON</h3>
+            <p class="text-sm">Tél. : <a href="tel:+33659197446" class="hover:text-primary">06 59 19 74 46</a></p>
+            <p class="text-sm">E-mail : <a href="mailto:lovecare.naomi@gmail.com" class="hover:text-primary">lovecare.naomi@gmail.com</a></p>
+            <p class="text-sm">Site web : <a href="https://lovecare-conseil-thérapie.com/" target="_blank" rel="noopener noreferrer" class="hover:text-primary">lovecare-conseil-thérapie.com</a></p>
+          </div>
+
+        </div>
+
+        <!-- Adresse + carte -->
+        <div>
+          <div class="mb-6">
+            <h3 class="font-bold uppercase tracking-wide text-sm text-primary mb-3">CABINET PSYCHO SANTÉ 74</h3>
+            <address class="not-italic text-gray-700 leading-relaxed text-sm">
+              89 Avenue de Genève<br />
+              Montée N° 4 – 1er étage<br />
+              74000 Annecy
+            </address>
+          </div>
+          <div class="rounded overflow-hidden shadow-md h-64">
+            <iframe
+              title="Localisation du cabinet Psycho Santé 74"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=89+Avenue+de+Gen%C3%A8ve+74000+Annecy"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 </MainLayout>

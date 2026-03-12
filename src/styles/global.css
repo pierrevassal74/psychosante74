@@ -31,9 +31,10 @@
     @apply block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors;
   }
 
-  /* ── Page hero banner ── */
+  /* ── Page hero banner (dark navy, fidèle à l'original) ── */
   .page-hero {
-    @apply bg-primary text-white py-12 px-6 text-center;
+    background-color: #335978;
+    @apply text-white py-12 px-6 text-center;
   }
   .page-hero h1 {
     @apply text-3xl md:text-4xl font-bold tracking-wide uppercase;
